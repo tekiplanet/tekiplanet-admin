@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\EnrollmentUpdated;
 use App\Services\NotificationService;
+use App\Jobs\SendEnrollmentNotification;
+use App\Jobs\SendEnrollmentEmail;
 
 class CourseController extends Controller
 {
@@ -51,7 +53,7 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         try {
-            \Log::info('Course creation request:', $request->all());
+            // \Log::info('Course creation request:', $request->all());
 
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
@@ -233,54 +235,116 @@ class CourseController extends Controller
      */
     public function bulkUpdateEnrollments(Course $course, Request $request)
     {
-        $request->validate([
-            'enrollment_ids' => 'required|array',
-            'enrollment_ids.*' => 'required|uuid|exists:enrollments,id',
-            'action' => 'required|in:status,payment_status,progress',
-            'value' => 'required|string'
-        ]);
+        try {
+            $request->validate([
+                'enrollment_ids' => 'required|array',
+                'enrollment_ids.*' => 'required|uuid|exists:enrollments,id',
+                'action' => 'required|in:status,payment_status,progress',
+                'value' => 'required|string'
+            ]);
 
-        $enrollments = $course->enrollments()
-            ->whereIn('id', $request->enrollment_ids)
-            ->with('user')
-            ->get();
+            $enrollments = $course->enrollments()
+                ->whereIn('id', $request->enrollment_ids)
+                ->with('user')
+                ->get();
 
-        foreach ($enrollments as $enrollment) {
-            $oldValue = $enrollment->{$request->action};
-            $enrollment->{$request->action} = $request->value;
-            $enrollment->save();
+            foreach ($enrollments as $enrollment) {
+                $oldValue = $enrollment->{$request->action};
+                $enrollment->{$request->action} = $request->value;
 
-            // Prepare notification data
-            $notificationData = [
-                'type' => 'enrollment_update',
-                'title' => 'Course Enrollment Update',
-                'message' => "Your enrollment status for {$course->title} has been updated.",
-                'icon' => 'bell',
-                'action_url' => route('student.courses.show', $course->id),
-                'extra_data' => [
-                    'course_id' => $course->id,
-                    'field_updated' => $request->action,
-                    'old_value' => $oldValue,
-                    'new_value' => $request->value
-                ]
-            ];
+                // If status is set to completed, set progress to 100
+                if ($request->action === 'status' && $request->value === 'completed') {
+                    $enrollment->progress = 100;
+                }
 
-            // Send notification
-            app(NotificationService::class)->send($notificationData, $enrollment->user);
+                $enrollment->save();
 
-            // Send email
-            Mail::to($enrollment->user)->send(new EnrollmentUpdated(
-                $enrollment,
-                $course,
-                $request->action,
-                $oldValue,
-                $request->value
-            ));
+                try {
+                    // Format values for progress updates
+                    $formattedOldValue = $request->action === 'progress' ? $oldValue . '%' : $oldValue;
+                    $formattedNewValue = $request->action === 'progress' ? $request->value . '%' : $request->value;
+
+                    // Prepare notification data
+                    $notificationData = [
+                        'type' => 'enrollment_update',
+                        'title' => match($request->action) {
+                            'progress' => 'Course Progress Update',
+                            'payment_status' => 'Payment Status Update',
+                            default => 'Enrollment Status Update'
+                        },
+                        'message' => match($request->action) {
+                            'progress' => "Your progress for {$course->title} has been updated to {$request->value}%",
+                            'payment_status' => "Your payment status for {$course->title} has been updated to " . str_replace('_', ' ', $request->value),
+                            default => "Your enrollment status for {$course->title} has been updated to {$request->value}"
+                        },
+                        'icon' => match($request->action) {
+                            'progress' => 'chart',
+                            'payment_status' => 'credit-card',
+                            default => 'bell'
+                        },
+                        'action_url' => null,
+                        'extra_data' => [
+                            'course_id' => $course->id,
+                            'field_updated' => $request->action,
+                            'old_value' => $formattedOldValue,
+                            'new_value' => $formattedNewValue
+                        ]
+                    ];
+
+                    // \Log::info('Attempting to dispatch jobs', [
+                    //     'user_id' => $enrollment->user->id,
+                    //     'email' => $enrollment->user->email,
+                    //     'action' => $request->action
+                    // ]);
+
+                    // Check if jobs table exists
+                    if (!\Schema::hasTable('jobs')) {
+                        // \Log::error('Jobs table does not exist!');
+                        throw new \Exception('Jobs table not found');
+                    }
+
+                    // Dispatch notification job
+                    $notificationJob = new SendEnrollmentNotification($notificationData, $enrollment->user);
+                    dispatch($notificationJob);
+
+                    // Dispatch email job
+                    $emailJob = new SendEnrollmentEmail(
+                        $enrollment,
+                        $course,
+                        $request->action,
+                        $formattedOldValue,
+                        $formattedNewValue
+                    );
+                    dispatch($emailJob);
+
+                    \Log::info('Jobs dispatched successfully');
+
+                } catch (\Exception $e) {
+                    // \Log::error('Failed to queue jobs', [
+                    //     'error' => $e->getMessage(),
+                    //     'trace' => $e->getTraceAsString()
+                    // ]);
+                    continue;
+                }
+            }
+
+            // Check jobs count
+            $jobsCount = \DB::table('jobs')->count();
+            // \Log::info('Current jobs in queue', ['count' => $jobsCount]);
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Enrollments updated successfully',
+                'count' => $enrollments->count(),
+                'jobs_queued' => $jobsCount
+            ]);
+
+        } catch (\Exception $e) {
+            // \Log::error('Bulk update error: ' . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to update enrollments: ' . $e->getMessage()
+            ], 500);
         }
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Enrollments updated successfully'
-        ]);
     }
 } 
