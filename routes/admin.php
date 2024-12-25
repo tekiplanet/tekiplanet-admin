@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\BusinessController;
+use App\Http\Controllers\Admin\ProfessionalController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -46,6 +47,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 ->name('businesses.customers.index');
             Route::get('business-profiles/{business}/customers/{customer}', [BusinessController::class, 'showCustomer'])
                 ->name('businesses.customers.show');
+
+            // Business Invoices routes
+            Route::get('business-profiles/{business}/invoices', [BusinessController::class, 'invoices'])
+                ->name('businesses.invoices.index');
+            Route::get('business-profiles/{business}/invoices/{invoice}', [BusinessController::class, 'showInvoice'])
+                ->name('businesses.invoices.show');
         });
 
         // Course management routes - accessible by super admin, admin, and tutor
@@ -67,5 +74,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::middleware('admin.roles:super_admin,admin,management')->group(function () {
             // Add management routes here
         });
+
+        // Professional routes
+        Route::resource('professionals', ProfessionalController::class)->except(['create', 'store', 'destroy']);
+        Route::post('professionals/{professional}/toggle-status', [ProfessionalController::class, 'toggleStatus'])
+            ->name('professionals.toggle-status');
     });
 }); 

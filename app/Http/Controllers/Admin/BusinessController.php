@@ -137,6 +137,90 @@ class BusinessController extends Controller
     public function showCustomer(BusinessProfile $business, $customerId)
     {
         $customer = $business->business_customers()->findOrFail($customerId);
-        return response()->json($customer);
+
+        // Calculate total spent from invoice payments
+        $totalSpent = $customer->business_invoices()
+            ->join('business_invoice_payments', 'business_invoices.id', '=', 'business_invoice_payments.invoice_id')
+            ->sum('business_invoice_payments.amount');
+
+        // Get the customer's currency from their latest invoice payment
+        $latestPayment = $customer->business_invoices()
+            ->join('business_invoice_payments', 'business_invoices.id', '=', 'business_invoice_payments.invoice_id')
+            ->select('business_invoice_payments.currency')
+            ->latest('business_invoice_payments.created_at')
+            ->first();
+
+        $currency = $latestPayment ? $latestPayment->currency : 'NGN';
+
+        return response()->json([
+            'id' => $customer->id,
+            'name' => $customer->name,
+            'email' => $customer->email,
+            'phone' => $customer->phone,
+            'status' => $customer->status,
+            'address' => $customer->address,
+            'notes' => $customer->notes,
+            'created_at' => $customer->created_at,
+            'updated_at' => $customer->updated_at,
+            'total_orders' => $customer->business_invoices()->count(),
+            'total_spent' => $totalSpent,
+            'currency' => $currency
+        ]);
+    }
+
+    public function invoices(Request $request, BusinessProfile $business)
+    {
+        $invoices = $business->business_invoices()
+            ->with(['customer', 'payments'])
+            ->when($request->search, function ($query, $search) {
+                $query->where(function ($q) use ($search) {
+                    $q->where('invoice_number', 'like', "%{$search}%")
+                      ->orWhereHas('customer', function ($q) use ($search) {
+                          $q->where('name', 'like', "%{$search}%")
+                            ->orWhere('email', 'like', "%{$search}%");
+                      });
+                });
+            })
+            ->latest()
+            ->paginate(10);
+
+        return view('admin.businesses.invoices.index', compact('business', 'invoices'));
+    }
+
+    public function showInvoice(BusinessProfile $business, $invoiceId)
+    {
+        $invoice = $business->business_invoices()
+            ->with(['customer', 'payments', 'items'])
+            ->findOrFail($invoiceId);
+
+        return response()->json([
+            'id' => $invoice->id,
+            'invoice_number' => $invoice->invoice_number,
+            'amount' => $invoice->amount,
+            'currency' => $invoice->currency,
+            'status' => $invoice->status,
+            'due_date' => $invoice->due_date,
+            'notes' => $invoice->notes,
+            'customer' => [
+                'name' => $invoice->customer->name,
+                'email' => $invoice->customer->email,
+            ],
+            'items' => $invoice->items->map(function ($item) {
+                return [
+                    'description' => $item->description,
+                    'quantity' => $item->quantity,
+                    'unit_price' => $item->unit_price,
+                    'amount' => $item->amount,
+                ];
+            }),
+            'payments' => $invoice->payments->map(function ($payment) {
+                return [
+                    'amount' => $payment->amount,
+                    'currency' => $payment->currency,
+                    'payment_date' => $payment->payment_date,
+                    'notes' => $payment->notes,
+                ];
+            }),
+        ]);
     }
 } 
