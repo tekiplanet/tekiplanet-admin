@@ -11,10 +11,12 @@ use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
+use App\Models\Transaction;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
     public $incrementing = false;
     protected $keyType = 'string';
@@ -32,6 +34,7 @@ class User extends Authenticatable
         'username',
         'avatar',
         'status',
+        'wallet_balance',
         'dark_mode',
         'email_notifications',
         'push_notifications',
@@ -69,6 +72,7 @@ class User extends Authenticatable
         'marketing_notifications' => 'boolean',
         'two_factor_enabled' => 'boolean',
         'two_factor_recovery_codes' => 'array',
+        'wallet_balance' => 'decimal:2',
     ];
 
     /**
@@ -84,6 +88,7 @@ class User extends Authenticatable
         'marketing_notifications' => true,
         'profile_visibility' => 'public',
         'status' => 'active',
+        'wallet_balance' => 0.00,
     ];
 
     /**
@@ -129,10 +134,29 @@ class User extends Authenticatable
     protected static function boot()
     {
         parent::boot();
+        
         static::creating(function ($model) {
             if (empty($model->{$model->getKeyName()})) {
                 $model->{$model->getKeyName()} = Str::uuid()->toString();
             }
+        });
+
+        static::deleting(function($user) {
+            // Delete business profile
+            if ($user->businessProfile) {
+                $user->businessProfile->delete();
+            }
+
+            // Delete professional profile
+            if ($user->professional) {
+                $user->professional->delete();
+            }
+
+            // Delete other related records
+            $user->userNotifications()->delete();
+            $user->transactions()->delete();
+            $user->enrollments()->delete();
+            $user->userCourseNotices()->delete();
         });
     }
 
@@ -176,6 +200,12 @@ class User extends Authenticatable
             ->orderByDesc('created_at');
     }
 
+    // Add this method for direct access to user_notifications
+    public function userNotifications()
+    {
+        return $this->hasMany(UserNotification::class);
+    }
+
     public function unreadNotifications()
     {
         return $this->notifications()
@@ -203,5 +233,17 @@ class User extends Authenticatable
     public function isActive(): bool
     {
         return $this->status === self::STATUS_ACTIVE;
+    }
+
+    // Add this relationship to the User model
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
+    // Add this relationship
+    public function userCourseNotices()
+    {
+        return $this->hasMany(UserCourseNotice::class);
     }
 }
