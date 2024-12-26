@@ -778,3 +778,17 @@
 [2024-12-26 20:17:07] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
 [2024-12-26 20:17:07] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
 [2024-12-26 20:17:07] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
+[2024-12-26 20:19:00] local.INFO: Fetching enrolled courses for user {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","username":"ruth"} 
+[2024-12-26 20:19:00] local.INFO: Course details for enrollment {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","course_title":"Machine Learning Fundamentals","course_price":"229000.99","course_exists":"Yes"} 
+[2024-12-26 20:19:00] local.INFO: Next Course Schedule Determination {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","next_schedule_start_date":"2025-01-24","next_schedule_days_of_week":"Tue,Wed,Thu","current_date":"2024-12-26"} 
+[2024-12-26 20:19:00] local.INFO: Course details for enrollment {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","course_title":"Web Development Masterclass","course_price":"199000.99","course_exists":"Yes"} 
+[2024-12-26 20:19:00] local.INFO: Next Course Schedule Determination {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","next_schedule_start_date":"2025-02-17","next_schedule_days_of_week":"Fri,Thu,Wed","current_date":"2024-12-26"} 
+[2024-12-26 20:19:00] local.INFO: Enrollment query results {"total_enrollments":2} 
+[2024-12-26 20:19:05] local.INFO: Installment plan created {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","first_installment_id":"734a9e05-115b-44fb-9a03-6a758b98a43d","second_installment_id":"90148dee-fc53-418d-89d9-7198db16aa14"} 
+[2024-12-26 20:19:08] local.INFO: Fetching enrolled courses for user {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","username":"ruth"} 
+[2024-12-26 20:19:08] local.INFO: Course details for enrollment {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","course_title":"Machine Learning Fundamentals","course_price":"229000.99","course_exists":"Yes"} 
+[2024-12-26 20:19:08] local.INFO: Next Course Schedule Determination {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","next_schedule_start_date":"2025-01-24","next_schedule_days_of_week":"Tue,Wed,Thu","current_date":"2024-12-26"} 
+[2024-12-26 20:19:08] local.INFO: Course details for enrollment {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","course_title":"Web Development Masterclass","course_price":"199000.99","course_exists":"Yes"} 
+[2024-12-26 20:19:08] local.INFO: Next Course Schedule Determination {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","next_schedule_start_date":"2025-02-17","next_schedule_days_of_week":"Fri,Thu,Wed","current_date":"2024-12-26"} 
+[2024-12-26 20:19:08] local.INFO: Enrollment query results {"total_enrollments":2} 
+[2024-12-26 20:19:10] local.INFO: Installment payment processed {"installment_id":"734a9e05-115b-44fb-9a03-6a758b98a43d","new_status":"paid","new_paid_at":"2024-12-26 20:19:10"} 
