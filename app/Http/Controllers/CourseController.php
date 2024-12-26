@@ -12,6 +12,8 @@ use App\Models\UserCourseExam;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
+use App\Jobs\SendCourseNoticeJob;
 
 class CourseController extends Controller
 {
@@ -293,15 +295,7 @@ class CourseController extends Controller
     {
         try {
             $course = Course::with([
-                'modules' => function($query) {
-                    $query->orderBy('order');
-                },
-                'modules.topics' => function($query) {
-                    $query->orderBy('order');
-                },
-                'modules.lessons' => function($query) {
-                    $query->orderBy('order');
-                },
+                'modules',
                 'instructor',
                 'schedules',
                 'exams',
@@ -316,17 +310,86 @@ class CourseController extends Controller
                     ->first();
             }
 
+            // Calculate next class date from schedules
+            $nextClass = null;
+            $today = now();
+            
+            foreach ($course->schedules as $schedule) {
+                $scheduleStart = Carbon::parse($schedule->start_date);
+                $scheduleEnd = Carbon::parse($schedule->end_date);
+                
+                // Skip if schedule is ended
+                if ($today->isAfter($scheduleEnd)) {
+                    continue;
+                }
+
+                // Get array of days
+                $classDays = explode(',', $schedule->days_of_week);
+                
+                // Find next occurrence
+                $nextDate = collect(range(0, 7))->map(function($offset) use ($today) {
+                    return $today->copy()->addDays($offset);
+                })->first(function($date) use ($classDays, $scheduleStart, $scheduleEnd) {
+                    $dayName = substr($date->format('D'), 0, 3);
+                    return in_array($dayName, $classDays) && 
+                           $date->between($scheduleStart, $scheduleEnd);
+                });
+
+                if ($nextDate && (!$nextClass || $nextDate->isBefore($nextClass))) {
+                    $nextClass = $nextDate;
+                }
+            }
+
+            // Format next class date
+            $nextClassFormatted = $nextClass 
+                ? $nextClass->format('D, M j, Y') . ' at ' . 
+                  Carbon::parse($course->schedules->first()->start_time)->format('g:i A')
+                : null;
+
+            $formattedSchedules = $course->schedules->map(function($schedule) {
+                $scheduleStart = Carbon::parse($schedule->start_date);
+                $scheduleEnd = Carbon::parse($schedule->end_date);
+                $today = now();
+                
+                // Get array of days
+                $classDays = explode(',', $schedule->days_of_week);
+                
+                // Find next class date for this schedule
+                $nextDate = collect(range(0, 7))->map(function($offset) use ($today) {
+                    return $today->copy()->addDays($offset);
+                })->first(function($date) use ($classDays, $scheduleStart, $scheduleEnd) {
+                    $dayName = substr($date->format('D'), 0, 3);
+                    return in_array($dayName, $classDays) && 
+                           $date->between($scheduleStart, $scheduleEnd);
+                });
+
+                return [
+                    'id' => $schedule->id,
+                    'start_date' => $schedule->start_date,
+                    'end_date' => $schedule->end_date,
+                    'start_time' => $schedule->start_time,
+                    'end_time' => $schedule->end_time,
+                    'days_of_week' => $schedule->days_of_week,
+                    'location' => $schedule->location,
+                    'next_class_date' => $nextDate ? $nextDate->format('Y-m-d') : null,
+                    'next_class_formatted' => $nextDate 
+                        ? $nextDate->format('D, M j, Y') . ' at ' . Carbon::parse($schedule->start_time)->format('g:i A')
+                        : null
+                ];
+            });
+
             return response()->json([
                 'course' => $course,
                 'modules' => $course->modules,
                 'lessons' => $course->modules->flatMap->lessons,
                 'exams' => $course->exams,
-                'schedules' => $course->schedules,
+                'schedules' => $formattedSchedules,
                 'notices' => $course->notices,
                 'features' => $course->features,
                 'instructor' => $course->instructor,
                 'enrollment' => $enrollment,
-                'installments' => $enrollment ? $enrollment->installments : []
+                'installments' => $enrollment ? $enrollment->installments : [],
+                'nextLesson' => $nextClassFormatted
             ]);
 
         } catch (\Exception $e) {
@@ -339,6 +402,59 @@ class CourseController extends Controller
             return response()->json([
                 'message' => 'Failed to fetch course details',
                 'error' => $e->getMessage()
+            ], 500);
+        }
+    }
+
+    public function sendBulkNotices(Request $request)
+    {
+        try {
+            $request->validate([
+                'enrollment_ids' => 'required|array',
+                'enrollment_ids.*' => 'required|string|exists:enrollments,id',
+                'title' => 'required|string|max:255',
+                'content' => 'required|string',
+                'priority' => 'required|in:low,medium,high',
+                'is_important' => 'required|boolean'
+            ]);
+
+            // Get the course_id from the first enrollment
+            $courseId = Enrollment::findOrFail($request->enrollment_ids[0])->course_id;
+
+            // Create the course notice
+            $courseNotice = CourseNotice::create([
+                'course_id' => $courseId,
+                'title' => $request->title,
+                'content' => $request->content,
+                'priority' => $request->priority,
+                'is_important' => $request->is_important,
+                'published_at' => now()
+            ]);
+
+            // Get unique user IDs from the selected enrollments
+            $userIds = Enrollment::whereIn('id', $request->enrollment_ids)
+                ->pluck('user_id')
+                ->unique()
+                ->toArray();
+
+            // Dispatch the job
+            SendCourseNoticeJob::dispatch($courseNotice, $userIds);
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Course notice is being sent to ' . count($userIds) . ' users',
+                'notice' => $courseNotice
+            ]);
+
+        } catch (\Exception $e) {
+            Log::error('Error sending bulk notices:', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to send notices: ' . $e->getMessage()
             ], 500);
         }
     }

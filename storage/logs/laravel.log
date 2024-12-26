@@ -1,0 +1,22 @@
+[2024-12-26 07:24:45] local.INFO: Fetching enrolled courses for user {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","username":"ruth"} 
+[2024-12-26 07:24:45] local.INFO: Course details for enrollment {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","course_title":"Machine Learning Fundamentals","course_price":"229000.99","course_exists":"Yes"} 
+[2024-12-26 07:24:45] local.INFO: Next Course Schedule Determination {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","next_schedule_start_date":"2025-01-24","next_schedule_days_of_week":"Tue,Thu","current_date":"2024-12-26"} 
+[2024-12-26 07:24:45] local.INFO: Course details for enrollment {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","course_title":"Web Development Masterclass","course_price":"199000.99","course_exists":"Yes"} 
+[2024-12-26 07:24:45] local.INFO: Next Course Schedule Determination {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","next_schedule_start_date":"2025-02-17","next_schedule_days_of_week":"Fri,Thu,Wed","current_date":"2024-12-26"} 
+[2024-12-26 07:24:45] local.INFO: Enrollment query results {"total_enrollments":2} 
+[2024-12-26 07:28:29] local.INFO: Fetching enrolled courses for user {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","username":"ruth"} 
+[2024-12-26 07:28:29] local.INFO: Course details for enrollment {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","course_title":"Machine Learning Fundamentals","course_price":"229000.99","course_exists":"Yes"} 
+[2024-12-26 07:28:29] local.INFO: Next Course Schedule Determination {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","next_schedule_start_date":"2025-01-24","next_schedule_days_of_week":"Tue,Thu","current_date":"2024-12-26"} 
+[2024-12-26 07:28:29] local.INFO: Course details for enrollment {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","course_title":"Web Development Masterclass","course_price":"199000.99","course_exists":"Yes"} 
+[2024-12-26 07:28:29] local.INFO: Next Course Schedule Determination {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","next_schedule_start_date":"2025-02-17","next_schedule_days_of_week":"Fri,Thu,Wed","current_date":"2024-12-26"} 
+[2024-12-26 07:28:29] local.INFO: Enrollment query results {"total_enrollments":2} 
+[2024-12-26 08:13:34] local.INFO: Jobs dispatched successfully  
+[2024-12-26 08:13:35] local.INFO: Jobs dispatched successfully  
+[2024-12-26 08:13:37] local.INFO: Processing notification job {"user_id":"74116e3c-1a91-4b2a-b3b8-cebf23c792e6","notification_type":"enrollment_update"} 
+[2024-12-26 08:13:37] local.INFO: Creating notification: {"type":"enrollment_update","title":"Course Progress Update","message":"Your progress for Machine Learning Fundamentals has been updated to 31%","icon":"chart","action_url":null,"extra_data":{"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","field_updated":"progress","old_value":"30%","new_value":"31%"}} 
+[2024-12-26 08:13:37] local.INFO: Notification created: {"id":"9dd0cad4-f804-41eb-80c1-bdbca9191bbe"} 
+[2024-12-26 08:13:37] local.INFO: Broadcasting notification  
+[2024-12-26 08:13:46] local.INFO: Processing notification job {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","notification_type":"enrollment_update"} 
+[2024-12-26 08:13:46] local.INFO: Creating notification: {"type":"enrollment_update","title":"Course Progress Update","message":"Your progress for Machine Learning Fundamentals has been updated to 31%","icon":"chart","action_url":null,"extra_data":{"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","field_updated":"progress","old_value":"30%","new_value":"31%"}} 
+[2024-12-26 08:13:46] local.INFO: Notification created: {"id":"9dd0cae2-9e91-4693-9ce5-1c8eb3738415"} 
+[2024-12-26 08:13:46] local.INFO: Broadcasting notification  
