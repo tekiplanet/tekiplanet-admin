@@ -13,6 +13,7 @@ use App\Mail\PaymentStatusUpdated;
 use App\Models\HustlePayment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Transaction;
 
 class HustleController extends Controller
 {
@@ -235,39 +236,65 @@ class HustleController extends Controller
                 'status' => 'required|in:pending,completed'
             ]);
 
-            $payment->update($validated);
+            \DB::transaction(function () use ($payment, $validated, $hustle) {
+                $payment->update($validated);
 
-            if ($payment->status === 'completed') {
-                // Update hustle payment flags
-                if ($payment->payment_type === 'initial') {
-                    $hustle->update(['initial_payment_released' => true]);
-                } else {
-                    $hustle->update(['final_payment_released' => true]);
+                if ($payment->status === 'completed') {
+                    // Get the professional's user
+                    $user = $payment->professional->user;
+
+                    // Credit user's wallet
+                    $user->increment('wallet_balance', $payment->amount);
+
+                    // Create transaction record
+                    Transaction::create([
+                        'user_id' => $user->id,
+                        'amount' => $payment->amount,
+                        'type' => 'credit',
+                        'description' => "Payment received for hustle: {$hustle->title}",
+                        'category' => 'hustle_payment',
+                        'status' => 'completed',
+                        'payment_method' => 'wallet',
+                        'reference_number' => 'HP-' . uniqid(),
+                        'notes' => [
+                            'hustle_id' => $hustle->id,
+                            'payment_id' => $payment->id,
+                            'payment_type' => $payment->payment_type
+                        ]
+                    ]);
+
+                    // Update hustle payment flags
+                    if ($payment->payment_type === 'initial') {
+                        $hustle->update(['initial_payment_released' => true]);
+                    } else {
+                        $hustle->update(['final_payment_released' => true]);
+                    }
+
+                    // Send notification
+                    $notificationService = app(NotificationService::class);
+                    $professional = $hustle->assignedProfessional;
+
+                    $notificationData = [
+                        'type' => 'payment_received',
+                        'title' => 'Payment Received',
+                        'message' => "Your {$payment->payment_type} payment of ₦" . number_format($payment->amount, 2) . " for '{$hustle->title}' has been credited to your wallet.",
+                        'icon' => 'cash',
+                        'action_url' => '/dashboard/wallet',
+                        'extra_data' => [
+                            'hustle_id' => $hustle->id,
+                            'payment_id' => $payment->id,
+                            'amount' => $payment->amount,
+                            'payment_type' => $payment->payment_type
+                        ]
+                    ];
+
+                    $notificationService->send($notificationData, $professional->user);
+
+                    // Send email
+                    Mail::to($professional->user->email)
+                        ->queue(new PaymentStatusUpdated($hustle, $professional, $payment));
                 }
-
-                // Send notification
-                $notificationService = app(NotificationService::class);
-                $professional = $hustle->assignedProfessional;
-
-                $notificationData = [
-                    'type' => 'payment_completed',
-                    'title' => 'Payment Completed',
-                    'message' => "Your {$payment->payment_type} payment for '{$hustle->title}' has been completed.",
-                    'icon' => 'check-circle',
-                    'action_url' => '/dashboard/payments/' . $payment->id,
-                    'extra_data' => [
-                        'hustle_id' => $hustle->id,
-                        'payment_id' => $payment->id,
-                        'amount' => $payment->amount
-                    ]
-                ];
-
-                $notificationService->send($notificationData, $professional->user);
-
-                // Send email
-                Mail::to($professional->user->email)
-                    ->queue(new PaymentStatusUpdated($hustle, $professional, $payment));
-            }
+            });
 
             if ($request->wantsJson()) {
                 return response()->json(['success' => true]);

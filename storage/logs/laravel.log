@@ -1423,3 +1423,6 @@
 [2024-12-27 16:50:16] local.INFO: Creating notification: {"type":"payment_completed","title":"Payment Completed","message":"Your initial payment for 'Mobile App Developer Needed for Cross-Border Payment App' has been completed.","icon":"check-circle","action_url":"/dashboard/payments/9dd3859f-6d77-4e9d-85a2-0fcfa134da23","extra_data":{"hustle_id":"9dd33d58-e22d-476c-ba23-0c4891ccfaed","payment_id":"9dd3859f-6d77-4e9d-85a2-0fcfa134da23","amount":"280000.00"}} 
 [2024-12-27 16:50:16] local.INFO: Notification created: {"id":"9dd38695-90d7-4459-b25f-6e9e869b88cf"} 
 [2024-12-27 16:50:16] local.INFO: Broadcasting notification  
+[2024-12-27 16:54:56] local.INFO: Creating notification: {"type":"payment_received","title":"Payment Received","message":"Your initial payment of ₦280,000.00 for 'Mobile App Developer Needed for Cross-Border Payment App' has been credited to your wallet.","icon":"cash","action_url":"/dashboard/wallet","extra_data":{"hustle_id":"9dd33d58-e22d-476c-ba23-0c4891ccfaed","payment_id":"9dd3859f-6d77-4e9d-85a2-0fcfa134da23","amount":"280000.00","payment_type":"initial"}} 
+[2024-12-27 16:54:56] local.INFO: Notification created: {"id":"9dd38841-375b-4d84-8f1b-c59d845ed9fc"} 
+[2024-12-27 16:54:56] local.INFO: Broadcasting notification  
