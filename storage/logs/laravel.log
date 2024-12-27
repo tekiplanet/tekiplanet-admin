@@ -1,3 +1,0 @@
-[2024-12-27 17:39:11] local.INFO: Creating notification: {"type":"new_message","title":"New Message from Admin","message":"You have received a new message regarding 'Mobile App Developer Needed for Cross-Border Payment App'","icon":"chat","action_url":"/dashboard/hustles/9dd33d58-e22d-476c-ba23-0c4891ccfaed/messages","extra_data":{"hustle_id":"9dd33d58-e22d-476c-ba23-0c4891ccfaed","message_id":"9dd39814-572c-40ff-a334-568245b14e0b"}} 
-[2024-12-27 17:39:11] local.INFO: Notification created: {"id":"9dd39814-a2b0-45f8-ba22-e77473832312"} 
-[2024-12-27 17:39:11] local.INFO: Broadcasting notification  
