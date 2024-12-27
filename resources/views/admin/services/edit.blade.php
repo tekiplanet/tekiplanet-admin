@@ -165,15 +165,17 @@ document.getElementById('editForm').addEventListener('submit', async function(e)
             body: formData,
             headers: {
                 'X-Requested-With': 'XMLHttpRequest',
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
             }
         });
 
-        if (response.ok) {
-            showNotification('Service updated successfully');
-            window.location.href = '{{ route("admin.services.index") }}';
+        const data = await response.json();
+        if (data.success) {
+            showNotification(data.title, data.message);
+            window.location.href = data.redirect;
         } else {
-            const data = await response.json();
-            showNotification(data.message || 'Failed to update service', 'error');
+            showNotification('Error', data.message || 'Failed to update service', 'error');
             button.disabled = false;
             loadingIcon.classList.add('hidden');
             buttonText.textContent = 'Update Service';

@@ -45,11 +45,35 @@ class ServiceController extends Controller
             'is_featured' => 'boolean'
         ]);
 
-        Service::create($validated);
-
-        return redirect()
-            ->route('admin.services.index')
-            ->with('success', 'Service created successfully');
+        try {
+            Service::create($validated);
+            
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => true,
+                    'title' => 'Success',
+                    'message' => 'Service created successfully',
+                    'redirect' => route('admin.services.index')
+                ]);
+            }
+            
+            return redirect()
+                ->route('admin.services.index')
+                ->with('success', 'Service created successfully');
+        } catch (\Exception $e) {
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => false,
+                    'title' => 'Error',
+                    'message' => 'Failed to create service: ' . $e->getMessage()
+                ], 500);
+            }
+            
+            return redirect()
+                ->back()
+                ->with('error', 'Failed to create service: ' . $e->getMessage())
+                ->withInput();
+        }
     }
 
     public function edit(Service $service)
@@ -70,11 +94,35 @@ class ServiceController extends Controller
             'is_featured' => 'boolean'
         ]);
 
-        $service->update($validated);
-
-        return redirect()
-            ->route('admin.services.index')
-            ->with('success', 'Service updated successfully');
+        try {
+            $service->update($validated);
+            
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => true,
+                    'title' => 'Success',
+                    'message' => 'Service updated successfully',
+                    'redirect' => route('admin.services.index')
+                ]);
+            }
+            
+            return redirect()
+                ->route('admin.services.index')
+                ->with('success', 'Service updated successfully');
+        } catch (\Exception $e) {
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => false,
+                    'title' => 'Error',
+                    'message' => 'Failed to update service: ' . $e->getMessage()
+                ], 500);
+            }
+            
+            return redirect()
+                ->back()
+                ->with('error', 'Failed to update service: ' . $e->getMessage())
+                ->withInput();
+        }
     }
 
     public function destroy(Service $service)

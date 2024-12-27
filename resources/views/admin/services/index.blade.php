@@ -1,7 +1,40 @@
 @extends('admin.layouts.app')
 
 @section('content')
+<!-- Debug session data -->
+@if(session()->has('success') || session()->has('error'))
+    <script>
+        console.log('Session data:', @json(session()->all()));
+    </script>
+@endif
+
+@include('admin.components.notification')
+
+@if(session('success'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            showNotification('Success', '{{ session('success') }}');
+        });
+    </script>
+@endif
+
+@if(session('error'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            showNotification('Error', '{{ session('error') }}', 'error');
+        });
+    </script>
+@endif
+
 <div class="container px-6 mx-auto">
+    <!-- Debug button -->
+    <!-- @if(config('app.debug'))
+    <button onclick="showNotification('Test notification', 'success')" 
+            class="mb-4 px-4 py-2 bg-gray-200 rounded">
+        Test Notification
+    </button>
+    @endif -->
+
     <div class="sm:flex sm:items-center sm:justify-between">
         <div>
             <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200">
@@ -188,4 +221,5 @@ function deleteService(id) {
 }
 </script>
 @endpush
+
 @endsection 
