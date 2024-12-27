@@ -8,6 +8,9 @@ use App\Models\ProfessionalCategory;
 use App\Models\Professional;
 use App\Services\NotificationService;
 use App\Mail\HustleCreated;
+use App\Mail\PaymentCreated;
+use App\Mail\PaymentStatusUpdated;
+use App\Models\HustlePayment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -151,5 +154,131 @@ class HustleController extends Controller
         $hustle->delete();
         return redirect()->route('admin.hustles.index')
             ->with('success', 'Hustle deleted successfully.');
+    }
+
+    public function updateStatus(Request $request, Hustle $hustle)
+    {
+        try {
+            $validated = $request->validate([
+                'status' => 'required|in:open,approved,in_progress,completed,cancelled'
+            ]);
+
+            if ($validated['status'] === 'in_progress') {
+                // Create initial payment (40%)
+                $initialPayment = HustlePayment::create([
+                    'hustle_id' => $hustle->id,
+                    'professional_id' => $hustle->assigned_professional_id,
+                    'amount' => $hustle->budget * 0.4,
+                    'payment_type' => 'initial',
+                    'status' => 'pending'
+                ]);
+
+                // Create final payment (60%)
+                $finalPayment = HustlePayment::create([
+                    'hustle_id' => $hustle->id,
+                    'professional_id' => $hustle->assigned_professional_id,
+                    'amount' => $hustle->budget * 0.6,
+                    'payment_type' => 'final',
+                    'status' => 'pending'
+                ]);
+
+                // Send notifications for both payments
+                $notificationService = app(NotificationService::class);
+                $professional = $hustle->assignedProfessional;
+
+                foreach ([$initialPayment, $finalPayment] as $payment) {
+                    // Send notification
+                    $notificationData = [
+                        'type' => 'payment_created',
+                        'title' => 'New Payment Created',
+                        'message' => "A new {$payment->payment_type} payment has been created for '{$hustle->title}'.",
+                        'icon' => 'cash',
+                        'action_url' => '/dashboard/payments/' . $payment->id,
+                        'extra_data' => [
+                            'hustle_id' => $hustle->id,
+                            'payment_id' => $payment->id,
+                            'amount' => $payment->amount
+                        ]
+                    ];
+
+                    $notificationService->send($notificationData, $professional->user);
+
+                    // Send email
+                    Mail::to($professional->user->email)
+                        ->queue(new PaymentCreated($hustle, $professional, $payment));
+                }
+            }
+
+            $hustle->update($validated);
+
+            if ($request->wantsJson()) {
+                return response()->json(['success' => true]);
+            }
+
+            return back()->with('success', 'Hustle status updated successfully.');
+        } catch (\Exception $e) {
+            if ($request->wantsJson()) {
+                return response()->json(['success' => false, 'message' => $e->getMessage()], 422);
+            }
+            return back()->with('error', 'Failed to update hustle status.');
+        }
+    }
+
+    public function updatePaymentStatus(Request $request, Hustle $hustle, HustlePayment $payment)
+    {
+        try {
+            if ($payment->status === 'completed') {
+                throw new \Exception('Cannot change status of completed payment.');
+            }
+
+            $validated = $request->validate([
+                'status' => 'required|in:pending,completed'
+            ]);
+
+            $payment->update($validated);
+
+            if ($payment->status === 'completed') {
+                // Update hustle payment flags
+                if ($payment->payment_type === 'initial') {
+                    $hustle->update(['initial_payment_released' => true]);
+                } else {
+                    $hustle->update(['final_payment_released' => true]);
+                }
+
+                // Send notification
+                $notificationService = app(NotificationService::class);
+                $professional = $hustle->assignedProfessional;
+
+                $notificationData = [
+                    'type' => 'payment_completed',
+                    'title' => 'Payment Completed',
+                    'message' => "Your {$payment->payment_type} payment for '{$hustle->title}' has been completed.",
+                    'icon' => 'check-circle',
+                    'action_url' => '/dashboard/payments/' . $payment->id,
+                    'extra_data' => [
+                        'hustle_id' => $hustle->id,
+                        'payment_id' => $payment->id,
+                        'amount' => $payment->amount
+                    ]
+                ];
+
+                $notificationService->send($notificationData, $professional->user);
+
+                // Send email
+                Mail::to($professional->user->email)
+                    ->queue(new PaymentStatusUpdated($hustle, $professional, $payment));
+            }
+
+            if ($request->wantsJson()) {
+                return response()->json(['success' => true]);
+            }
+
+            return back()->with('success', 'Payment status updated successfully.');
+        } catch (\Exception $e) {
+            if ($request->wantsJson()) {
+                return response()->json(['success' => false, 'message' => $e->getMessage()], 422);
+            }
+            return back()->with('error', $e->getMessage());
+        }
     }
 } 
