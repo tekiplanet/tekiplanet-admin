@@ -21384,3 +21384,9 @@
 #62 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
 #63 {main}
 "} 
+[2024-12-27 00:51:34] local.INFO: Creating notification: {"type":"order_status_updated","title":"Order Status Updated","message":"Your order #9dcdca4d-363b-425f-bb9f-4b0f6b81f27a status has been updated to Shipped","icon":"package","action_url":"/orders/9dcdca4d-363b-425f-bb9f-4b0f6b81f27a/tracking","extra_data":{"order_id":"9dcdca4d-363b-425f-bb9f-4b0f6b81f27a","status":"shipped","notes":"We got information that your delivery was hijacked"}} 
+[2024-12-27 00:51:34] local.INFO: Notification created: {"id":"9dd22fba-65c3-47e5-98c2-f1d02b129cc3"} 
+[2024-12-27 00:51:34] local.INFO: Broadcasting notification  
+[2024-12-27 00:56:21] local.INFO: Creating notification: {"type":"order_tracking_updated","title":"Order Tracking Updated","message":"New tracking update for order #9dcdca4d-363b-425f-bb9f-4b0f6b81f27a: Out_for_delivery","icon":"truck","action_url":"/orders/9dcdca4d-363b-425f-bb9f-4b0f6b81f27a/tracking","extra_data":{"order_id":"9dcdca4d-363b-425f-bb9f-4b0f6b81f27a","status":"out_for_delivery","location":"System","description":"Order is now out for delivery and will arive soon"}} 
+[2024-12-27 00:56:21] local.INFO: Notification created: {"id":"9dd23170-53f0-436c-9379-31a4160e2992"} 
+[2024-12-27 00:56:21] local.INFO: Broadcasting notification  
