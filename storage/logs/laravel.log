@@ -1,0 +1,3 @@
+[2024-12-27 18:59:21] local.INFO: Creating notification: {"type":"quote_status_updated","title":"Quote Status Updated","message":"Your quote status has been updated to Reviewed","action_url":"/quotes/f38a6564-5533-4b90-87d8-d539f0d31861"} 
+[2024-12-27 18:59:21] local.INFO: Notification created: {"id":"9dd3b4c0-c9c7-4584-b879-e39b0c4a3288"} 
+[2024-12-27 18:59:22] local.INFO: Broadcasting notification  
