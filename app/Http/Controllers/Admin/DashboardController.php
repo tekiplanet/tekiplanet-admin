@@ -7,6 +7,8 @@ use App\Enums\AdminRole;
 use Illuminate\Http\Request;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Transaction;
+use App\Models\BankAccount;
 
 class DashboardController extends Controller
 {
@@ -56,8 +58,19 @@ class DashboardController extends Controller
 
     private function financeDashboard()
     {
-        // Fetch finance specific data
-        return view('admin.dashboard.finance');
+        $totalRevenue = Transaction::where('type', 'credit')->sum('amount');
+        $transactionCount = Transaction::count();
+        $activeBankAccounts = BankAccount::where('is_verified', true)->count();
+        $recentTransactions = Transaction::latest()->take(5)->get();
+        $bankAccounts = BankAccount::latest()->take(5)->get();
+
+        return view('admin.dashboard.finance', compact(
+            'totalRevenue',
+            'transactionCount',
+            'activeBankAccounts',
+            'recentTransactions',
+            'bankAccounts'
+        ));
     }
 
     private function tutorDashboard()
