@@ -150,3 +150,25 @@
 [2024-12-28 17:03:39] local.INFO: Recent payments: {"count":5} 
 [2024-12-28 17:03:39] local.INFO: Combined activities: {"count":9} 
 [2024-12-28 17:03:39] local.INFO: Metrics response: {"metrics":{"revenue":"15659041.60","revenue_trend":{"direction":"up","percentage":100},"total_customers":2,"customers_this_month":2,"customer_trend":{"direction":"up","percentage":100},"revenueData":[{"name":"Jul 2024","value":0},{"name":"Aug 2024","value":0},{"name":"Sep 2024","value":0},{"name":"Oct 2024","value":0},{"name":"Nov 2024","value":0},{"name":"Dec 2024","value":"15659041.60"}],"recent_activities":[{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:19:58","amount":"3210.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:17:50","amount":"5790.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 19:57:18","amount":"1000.00","currency":"KES"},{"type":"invoice_created","title":"Invoice #INV-070209855 created for Maihi Ben","time":"2024-12-24 19:56:50","amount":"890000.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:51:49","amount":"7000.00","currency":"GBP"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:50:55","amount":"1000.00","currency":"GBP"},{"type":"invoice_created","title":"Invoice #INV-069588398 created for Precious Eweka","time":"2024-12-24 19:46:28","amount":"8000.00","currency":"GBP"},{"type":"customer_added","title":"New customer added: Precious Eweka","time":"2024-12-24 17:55:23","amount":null,"currency":null},{"type":"customer_added","title":"New customer added: Maihi Ben","time":"2024-12-24 17:13:38","amount":null,"currency":null}]}} 
+[2024-12-28 17:07:20] local.INFO: Fetching enrolled courses for user {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","username":"ruth"} 
+[2024-12-28 17:07:20] local.INFO: Course details for enrollment {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","course_title":"Machine Learning Fundamentals","course_price":"229000.99","course_exists":"Yes"} 
+[2024-12-28 17:07:20] local.INFO: Next Course Schedule Determination {"course_id":"73eb4df1-0351-4678-a7bc-9c519b250dc5","next_schedule_start_date":"2025-01-24","next_schedule_days_of_week":"Tue,Wed,Thu","current_date":"2024-12-28"} 
+[2024-12-28 17:07:20] local.INFO: Course details for enrollment {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","course_title":"Web Development Masterclass","course_price":"199000.99","course_exists":"Yes"} 
+[2024-12-28 17:07:20] local.INFO: Next Course Schedule Determination {"course_id":"2347d980-c6db-4b98-aab8-50acf6004f0f","next_schedule_start_date":"2025-02-17","next_schedule_days_of_week":"Fri,Thu,Wed","current_date":"2024-12-28"} 
+[2024-12-28 17:07:20] local.INFO: Enrollment query results {"total_enrollments":2} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"658a901a-154d-438b-8602-97cf0292e569","status":"completed"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"7f6d6a26-de78-4e8d-bf63-17f96ab7c826","status":"upcoming"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"c2a4cbde-69d3-4154-a3f7-a5f12149e838","status":"upcoming"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"658a901a-154d-438b-8602-97cf0292e569","status":"completed"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"7f6d6a26-de78-4e8d-bf63-17f96ab7c826","status":"upcoming"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
+[2024-12-28 17:07:30] local.INFO: Getting exam status: {"exam_id":"c2a4cbde-69d3-4154-a3f7-a5f12149e838","status":"upcoming"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"658a901a-154d-438b-8602-97cf0292e569","status":"completed"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"7f6d6a26-de78-4e8d-bf63-17f96ab7c826","status":"upcoming"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"c2a4cbde-69d3-4154-a3f7-a5f12149e838","status":"upcoming"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"658a901a-154d-438b-8602-97cf0292e569","status":"completed"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"7f6d6a26-de78-4e8d-bf63-17f96ab7c826","status":"upcoming"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"826b6588-b847-42b4-8f0e-eef669c47246","status":"completed"} 
+[2024-12-28 17:10:04] local.INFO: Getting exam status: {"exam_id":"c2a4cbde-69d3-4154-a3f7-a5f12149e838","status":"upcoming"} 
