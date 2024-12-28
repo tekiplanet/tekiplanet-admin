@@ -45,3 +45,1157 @@
 [2024-12-28 18:04:15] local.INFO: Recent payments: {"count":5} 
 [2024-12-28 18:04:15] local.INFO: Combined activities: {"count":9} 
 [2024-12-28 18:04:15] local.INFO: Metrics response: {"metrics":{"revenue":"15659041.60","revenue_trend":{"direction":"up","percentage":100},"total_customers":2,"customers_this_month":2,"customer_trend":{"direction":"up","percentage":100},"revenueData":[{"name":"Jul 2024","value":0},{"name":"Aug 2024","value":0},{"name":"Sep 2024","value":0},{"name":"Oct 2024","value":0},{"name":"Nov 2024","value":0},{"name":"Dec 2024","value":"15659041.60"}],"recent_activities":[{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:19:58","amount":"3210.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:17:50","amount":"5790.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 19:57:18","amount":"1000.00","currency":"KES"},{"type":"invoice_created","title":"Invoice #INV-070209855 created for Maihi Ben","time":"2024-12-24 19:56:50","amount":"890000.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:51:49","amount":"7000.00","currency":"GBP"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:50:55","amount":"1000.00","currency":"GBP"},{"type":"invoice_created","title":"Invoice #INV-069588398 created for Precious Eweka","time":"2024-12-24 19:46:28","amount":"8000.00","currency":"GBP"},{"type":"customer_added","title":"New customer added: Precious Eweka","time":"2024-12-24 17:55:23","amount":null,"currency":null},{"type":"customer_added","title":"New customer added: Maihi Ben","time":"2024-12-24 17:13:38","amount":null,"currency":null}]}} 
+[2024-12-28 18:43:28] local.INFO: Metrics endpoint hit {"endpoint":"GET /business/metrics","user":"3e2a1694-4958-4ff0-9d2d-a03031597266"} 
+[2024-12-28 18:43:28] local.INFO: Fetching metrics for business: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","business_profile":{"App\\Models\\BusinessProfile":{"id":"9dcd80ee-4c54-42ac-b29d-1674bc222082","user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","business_name":"Zarno world intl.","business_email":"oliverhayes66@gmail.com","phone_number":"1858379466","address":"OLASCOAGA 4436","city":"Departamento de San Rafael","state":"FCT","country":"Nigeria","business_type":"Manufacturing","registration_number":null,"tax_number":null,"logo":"business-logos/pCAx1nrCFFdVILV8gv1uoUwZg0qwscFhXMZOgONX.jpg","website":"https://tyabs.cu","description":"Please provide a brief description of your business","status":"active","is_verified":0,"verified_at":null,"created_at":"2024-12-24T16:59:29.000000Z","updated_at":"2024-12-28T18:12:22.000000Z","logo_url":"http://192.168.43.190:8000/storage/business-logos/pCAx1nrCFFdVILV8gv1uoUwZg0qwscFhXMZOgONX.jpg"}},"business_id":"9dcd80ee-4c54-42ac-b29d-1674bc222082"} 
+[2024-12-28 18:43:28] local.INFO: Calculating monthly revenue: {"business_id":"9dcd80ee-4c54-42ac-b29d-1674bc222082","month":12,"year":2024} 
+[2024-12-28 18:43:28] local.INFO: Found invoices: {"invoice_count":2,"invoice_ids":{"Illuminate\\Support\\Collection":["9dcdbca6-98d3-4a97-872c-de7701e95785","9dcdc05a-a6e7-4daa-b0ea-cf5939007fe6"]}} 
+[2024-12-28 18:43:29] local.INFO: Revenue calculation result: {"total_revenue":"15659041.60"} 
+[2024-12-28 18:43:29] local.INFO: Getting total customers: {"business_id":"9dcd80ee-4c54-42ac-b29d-1674bc222082"} 
+[2024-12-28 18:43:29] local.INFO: Customer count: {"total_customers":2} 
+[2024-12-28 18:43:29] local.INFO: Getting recent activities: {"business_id":"9dcd80ee-4c54-42ac-b29d-1674bc222082","limit":20} 
+[2024-12-28 18:43:29] local.INFO: Activity counts: {"customers":2,"invoices":2,"payments":5} 
+[2024-12-28 18:43:29] local.INFO: Recent customers: {"count":2} 
+[2024-12-28 18:43:29] local.INFO: Recent invoices: {"count":2} 
+[2024-12-28 18:43:29] local.INFO: Recent payments: {"count":5} 
+[2024-12-28 18:43:29] local.INFO: Combined activities: {"count":9} 
+[2024-12-28 18:43:29] local.INFO: Metrics response: {"metrics":{"revenue":"15659041.60","revenue_trend":{"direction":"up","percentage":100},"total_customers":2,"customers_this_month":2,"customer_trend":{"direction":"up","percentage":100},"revenueData":[{"name":"Jul 2024","value":0},{"name":"Aug 2024","value":0},{"name":"Sep 2024","value":0},{"name":"Oct 2024","value":0},{"name":"Nov 2024","value":0},{"name":"Dec 2024","value":"15659041.60"}],"recent_activities":[{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:19:58","amount":"3210.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 20:17:50","amount":"5790.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-070209855 from Maihi Ben","time":"2024-12-24 19:57:18","amount":"1000.00","currency":"KES"},{"type":"invoice_created","title":"Invoice #INV-070209855 created for Maihi Ben","time":"2024-12-24 19:56:50","amount":"890000.00","currency":"KES"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:51:49","amount":"7000.00","currency":"GBP"},{"type":"payment_received","title":"Payment received for Invoice #INV-069588398 from Precious Eweka","time":"2024-12-24 19:50:55","amount":"1000.00","currency":"GBP"},{"type":"invoice_created","title":"Invoice #INV-069588398 created for Precious Eweka","time":"2024-12-24 19:46:28","amount":"8000.00","currency":"GBP"},{"type":"customer_added","title":"New customer added: Precious Eweka","time":"2024-12-24 17:55:23","amount":null,"currency":null},{"type":"customer_added","title":"New customer added: Maihi Ben","time":"2024-12-24 17:13:38","amount":null,"currency":null}]}} 
+[2024-12-28 18:59:57] local.ERROR: Class "AdminRole" not found {"view":{"view":"C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\resources\\views\\admin\\partials\\sidebar.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1930612536 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1746</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1930612536\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","stats":"<pre class=sf-dump id=sf-dump-889068505 data-indent-pad=\"  \"><span class=sf-dump-note>array:4</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>total_users</span>\" => <span class=sf-dump-num>17</span>
+  \"<span class=sf-dump-key>total_courses</span>\" => <span class=sf-dump-num>9</span>
+  \"<span class=sf-dump-key>total_businesses</span>\" => <span class=sf-dump-num>5</span>
+  \"<span class=sf-dump-key>total_professionals</span>\" => <span class=sf-dump-num>6</span>
+</samp>]
+</pre><script>Sfdump(\"sf-dump-889068505\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","recent_users":"<pre class=sf-dump id=sf-dump-1638997271 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#2999</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#2998</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#2997</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+    </samp>}
+    <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#2996</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+    </samp>}
+    <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#2995</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+    </samp>}
+    <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#2994</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [ &#8230;25]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1638997271\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","recent_courses":"<pre class=sf-dump id=sf-dump-2147172335 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#3019</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3010</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3012</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3011</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3044</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3015</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-2147172335\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__currentLoopData":"<pre class=sf-dump id=sf-dump-1844486393 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#3019</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:5</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3010</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3012</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3011</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3044</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\Course
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Course</span> {<a class=sf-dump-ref>#3015</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [ &#8230;18]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [ &#8230;4]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [ &#8230;15]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1844486393\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","user":"<pre class=sf-dump id=sf-dump-425066155 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\User</span> {<a class=sf-dump-ref>#2994</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:25</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">50c5ad2f-611f-4663-8bb8-180ef8572724</span>\"
+    \"<span class=sf-dump-key>username</span>\" => \"<span class=sf-dump-str title=\"7 characters\">devan66</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"28 characters\">predovic.thurman@example.com</span>\"
+    \"<span class=sf-dump-key>email_verified_at</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"6 characters\">active</span>\"
+    \"<span class=sf-dump-key>password</span>\" => \"<span class=sf-dump-str title=\"60 characters\">$2y$12$LTmb4ac0xDxwuEk/UeIDaeKRFoNwc1sZ.dR1jVyKEPYr1EX2ewRby</span>\"
+    \"<span class=sf-dump-key>first_name</span>\" => \"<span class=sf-dump-str title=\"4 characters\">Lyda</span>\"
+    \"<span class=sf-dump-key>last_name</span>\" => \"<span class=sf-dump-str title=\"5 characters\">Feest</span>\"
+    \"<span class=sf-dump-key>bio</span>\" => \"<span class=sf-dump-str title=\"43 characters\">Omnis et omnis facere quidem sed quibusdam.</span>\"
+    \"<span class=sf-dump-key>timezone</span>\" => \"<span class=sf-dump-str title=\"12 characters\">Africa/Lagos</span>\"
+    \"<span class=sf-dump-key>avatar</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>account_type</span>\" => \"<span class=sf-dump-str title=\"12 characters\">professional</span>\"
+    \"<span class=sf-dump-key>wallet_balance</span>\" => \"<span class=sf-dump-str title=\"4 characters\">0.00</span>\"
+    \"<span class=sf-dump-key>dark_mode</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>email_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>push_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>marketing_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>profile_visibility</span>\" => \"<span class=sf-dump-str title=\"6 characters\">public</span>\"
+    \"<span class=sf-dump-key>remember_token</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:58:41</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:58:41</span>\"
+    \"<span class=sf-dump-key>two_factor_enabled</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>two_factor_secret</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>two_factor_recovery_codes</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>deleted_at</span>\" => <span class=sf-dump-const>null</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:25</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">50c5ad2f-611f-4663-8bb8-180ef8572724</span>\"
+    \"<span class=sf-dump-key>username</span>\" => \"<span class=sf-dump-str title=\"7 characters\">devan66</span>\"
+    \"<span class=sf-dump-key>email</span>\" => \"<span class=sf-dump-str title=\"28 characters\">predovic.thurman@example.com</span>\"
+    \"<span class=sf-dump-key>email_verified_at</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"6 characters\">active</span>\"
+    \"<span class=sf-dump-key>password</span>\" => \"<span class=sf-dump-str title=\"60 characters\">$2y$12$LTmb4ac0xDxwuEk/UeIDaeKRFoNwc1sZ.dR1jVyKEPYr1EX2ewRby</span>\"
+    \"<span class=sf-dump-key>first_name</span>\" => \"<span class=sf-dump-str title=\"4 characters\">Lyda</span>\"
+    \"<span class=sf-dump-key>last_name</span>\" => \"<span class=sf-dump-str title=\"5 characters\">Feest</span>\"
+    \"<span class=sf-dump-key>bio</span>\" => \"<span class=sf-dump-str title=\"43 characters\">Omnis et omnis facere quidem sed quibusdam.</span>\"
+    \"<span class=sf-dump-key>timezone</span>\" => \"<span class=sf-dump-str title=\"12 characters\">Africa/Lagos</span>\"
+    \"<span class=sf-dump-key>avatar</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>account_type</span>\" => \"<span class=sf-dump-str title=\"12 characters\">professional</span>\"
+    \"<span class=sf-dump-key>wallet_balance</span>\" => \"<span class=sf-dump-str title=\"4 characters\">0.00</span>\"
+    \"<span class=sf-dump-key>dark_mode</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>email_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>push_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>marketing_notifications</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>profile_visibility</span>\" => \"<span class=sf-dump-str title=\"6 characters\">public</span>\"
+    \"<span class=sf-dump-key>remember_token</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:58:41</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:58:41</span>\"
+    \"<span class=sf-dump-key>two_factor_enabled</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>two_factor_secret</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>two_factor_recovery_codes</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>deleted_at</span>\" => <span class=sf-dump-const>null</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:9</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>email_verified_at</span>\" => \"<span class=sf-dump-str title=\"8 characters\">datetime</span>\"
+    \"<span class=sf-dump-key>dark_mode</span>\" => \"<span class=sf-dump-str title=\"7 characters\">boolean</span>\"
+    \"<span class=sf-dump-key>email_notifications</span>\" => \"<span class=sf-dump-str title=\"7 characters\">boolean</span>\"
+    \"<span class=sf-dump-key>push_notifications</span>\" => \"<span class=sf-dump-str title=\"7 characters\">boolean</span>\"
+    \"<span class=sf-dump-key>marketing_notifications</span>\" => \"<span class=sf-dump-str title=\"7 characters\">boolean</span>\"
+    \"<span class=sf-dump-key>two_factor_enabled</span>\" => \"<span class=sf-dump-str title=\"7 characters\">boolean</span>\"
+    \"<span class=sf-dump-key>two_factor_recovery_codes</span>\" => \"<span class=sf-dump-str title=\"5 characters\">array</span>\"
+    \"<span class=sf-dump-key>wallet_balance</span>\" => \"<span class=sf-dump-str title=\"9 characters\">decimal:2</span>\"
+    \"<span class=sf-dump-key>deleted_at</span>\" => \"<span class=sf-dump-str title=\"8 characters\">datetime</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:4</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"8 characters\">password</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"17 characters\">two_factor_secret</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"25 characters\">two_factor_recovery_codes</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:18</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"10 characters\">first_name</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"9 characters\">last_name</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"5 characters\">email</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"8 characters\">password</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"8 characters\">username</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"6 characters\">avatar</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"6 characters\">status</span>\"
+    <span class=sf-dump-index>7</span> => \"<span class=sf-dump-str title=\"14 characters\">wallet_balance</span>\"
+    <span class=sf-dump-index>8</span> => \"<span class=sf-dump-str title=\"9 characters\">dark_mode</span>\"
+    <span class=sf-dump-index>9</span> => \"<span class=sf-dump-str title=\"19 characters\">email_notifications</span>\"
+    <span class=sf-dump-index>10</span> => \"<span class=sf-dump-str title=\"18 characters\">push_notifications</span>\"
+    <span class=sf-dump-index>11</span> => \"<span class=sf-dump-str title=\"23 characters\">marketing_notifications</span>\"
+    <span class=sf-dump-index>12</span> => \"<span class=sf-dump-str title=\"18 characters\">profile_visibility</span>\"
+    <span class=sf-dump-index>13</span> => \"<span class=sf-dump-str title=\"8 characters\">timezone</span>\"
+    <span class=sf-dump-index>14</span> => \"<span class=sf-dump-str title=\"8 characters\">language</span>\"
+    <span class=sf-dump-index>15</span> => \"<span class=sf-dump-str title=\"18 characters\">two_factor_enabled</span>\"
+    <span class=sf-dump-index>16</span> => \"<span class=sf-dump-str title=\"17 characters\">two_factor_secret</span>\"
+    <span class=sf-dump-index>17</span> => \"<span class=sf-dump-str title=\"25 characters\">two_factor_recovery_codes</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">forceDeleting</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-425066155\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","loop":"<pre class=sf-dump id=sf-dump-138786155 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-138786155\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","course":"<pre class=sf-dump id=sf-dump-54493057 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Course</span> {<a class=sf-dump-ref>#3015</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"7 characters\">courses</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:18</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">2d33c65e-6ea6-475b-9ee4-1a952e07a1c9</span>\"
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"30 characters\">Digital Marketing Fundamentals</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"103 characters\">Comprehensive guide to digital marketing strategies, SEO, social media marketing, and content creation.</span>\"
+    \"<span class=sf-dump-key>category</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Marketing</span>\"
+    \"<span class=sf-dump-key>category_id</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>level</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Beginner</span>\"
+    \"<span class=sf-dump-key>price</span>\" => \"<span class=sf-dump-str title=\"9 characters\">149000.99</span>\"
+    \"<span class=sf-dump-key>instructor_id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">4164f6b0-ca8e-4121-904b-ac76c40b02e6</span>\"
+    \"<span class=sf-dump-key>image_url</span>\" => \"<span class=sf-dump-str title=\"163 characters\">https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</span>\"
+    \"<span class=sf-dump-key>duration_hours</span>\" => <span class=sf-dump-num>30</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"6 characters\">active</span>\"
+    \"<span class=sf-dump-key>rating</span>\" => <span class=sf-dump-num>4.14</span>
+    \"<span class=sf-dump-key>total_reviews</span>\" => <span class=sf-dump-num>7</span>
+    \"<span class=sf-dump-key>total_students</span>\" => <span class=sf-dump-num>500</span>
+    \"<span class=sf-dump-key>prerequisites</span>\" => \"<span class=sf-dump-str title=\"102 characters\">&quot;[\\&quot;Basic understanding of digital platforms\\&quot;,\\&quot;Interest in marketing\\&quot;,\\&quot;Basic computer literacy\\&quot;]&quot;</span>\"
+    \"<span class=sf-dump-key>learning_outcomes</span>\" => \"<span class=sf-dump-str title=\"116 characters\">&quot;[\\&quot;Understand digital marketing strategies\\&quot;,\\&quot;Learn SEO techniques\\&quot;,\\&quot;Create effective social media campaigns\\&quot;]&quot;</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:55:33</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:55:40</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:18</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">2d33c65e-6ea6-475b-9ee4-1a952e07a1c9</span>\"
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"30 characters\">Digital Marketing Fundamentals</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"103 characters\">Comprehensive guide to digital marketing strategies, SEO, social media marketing, and content creation.</span>\"
+    \"<span class=sf-dump-key>category</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Marketing</span>\"
+    \"<span class=sf-dump-key>category_id</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>level</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Beginner</span>\"
+    \"<span class=sf-dump-key>price</span>\" => \"<span class=sf-dump-str title=\"9 characters\">149000.99</span>\"
+    \"<span class=sf-dump-key>instructor_id</span>\" => \"<span class=sf-dump-str title=\"36 characters\">4164f6b0-ca8e-4121-904b-ac76c40b02e6</span>\"
+    \"<span class=sf-dump-key>image_url</span>\" => \"<span class=sf-dump-str title=\"163 characters\">https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</span>\"
+    \"<span class=sf-dump-key>duration_hours</span>\" => <span class=sf-dump-num>30</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"6 characters\">active</span>\"
+    \"<span class=sf-dump-key>rating</span>\" => <span class=sf-dump-num>4.14</span>
+    \"<span class=sf-dump-key>total_reviews</span>\" => <span class=sf-dump-num>7</span>
+    \"<span class=sf-dump-key>total_students</span>\" => <span class=sf-dump-num>500</span>
+    \"<span class=sf-dump-key>prerequisites</span>\" => \"<span class=sf-dump-str title=\"102 characters\">&quot;[\\&quot;Basic understanding of digital platforms\\&quot;,\\&quot;Interest in marketing\\&quot;,\\&quot;Basic computer literacy\\&quot;]&quot;</span>\"
+    \"<span class=sf-dump-key>learning_outcomes</span>\" => \"<span class=sf-dump-str title=\"116 characters\">&quot;[\\&quot;Understand digital marketing strategies\\&quot;,\\&quot;Learn SEO techniques\\&quot;,\\&quot;Create effective social media campaigns\\&quot;]&quot;</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:55:33</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2024-12-20 16:55:40</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:4</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>prerequisites</span>\" => \"<span class=sf-dump-str title=\"5 characters\">array</span>\"
+    \"<span class=sf-dump-key>learning_outcomes</span>\" => \"<span class=sf-dump-str title=\"5 characters\">array</span>\"
+    \"<span class=sf-dump-key>rating</span>\" => \"<span class=sf-dump-str title=\"5 characters\">float</span>\"
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"6 characters\">string</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:15</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"5 characters\">title</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"11 characters\">description</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"8 characters\">category</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"11 characters\">category_id</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"5 characters\">level</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"5 characters\">price</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"13 characters\">instructor_id</span>\"
+    <span class=sf-dump-index>7</span> => \"<span class=sf-dump-str title=\"9 characters\">image_url</span>\"
+    <span class=sf-dump-index>8</span> => \"<span class=sf-dump-str title=\"14 characters\">duration_hours</span>\"
+    <span class=sf-dump-index>9</span> => \"<span class=sf-dump-str title=\"6 characters\">status</span>\"
+    <span class=sf-dump-index>10</span> => \"<span class=sf-dump-str title=\"6 characters\">rating</span>\"
+    <span class=sf-dump-index>11</span> => \"<span class=sf-dump-str title=\"13 characters\">total_reviews</span>\"
+    <span class=sf-dump-index>12</span> => \"<span class=sf-dump-str title=\"14 characters\">total_students</span>\"
+    <span class=sf-dump-index>13</span> => \"<span class=sf-dump-str title=\"13 characters\">prerequisites</span>\"
+    <span class=sf-dump-index>14</span> => \"<span class=sf-dump-str title=\"17 characters\">learning_outcomes</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-54493057\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":"9dd5b60e-f072-456e-b9a0-f2bd2bec92ef","exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Class \"AdminRole\" not found at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\resources\\views\\admin\\partials\\sidebar.blade.php:26)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\resources\\views\\admin\\dashboard.blade.php(178): Illuminate\\View\\View->render()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#62 {main}
+
+[previous exception] [object] (Error(code: 0): Class \"AdminRole\" not found at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\storage\\framework\\views\\dad2c43eca10047952dba77718aa98cd.php:26)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require()
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\storage\\framework\\views\\d699c6143c9d04a2a0abaf01cc67665a.php(78): Illuminate\\View\\View->render()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\storage\\framework\\views\\7d4d73c8597fba388302cca27f5aec75.php(190): Illuminate\\View\\View->render()
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#67 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#68 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#69 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#70 {main}
+"} 
+[2024-12-28 19:02:56] local.ERROR: Class "App\Http\Controllers\Admin\Order" not found {"userId":"9dd5b60e-f072-456e-b9a0-f2bd2bec92ef","exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\Admin\\Order\" not found at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php:42)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(19): App\\Http\\Controllers\\Admin\\DashboardController->salesDashboard()
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Admin\\DashboardController->index()
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\DashboardController), 'index')
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#48 {main}
+"} 
+[2024-12-28 19:08:33] local.ERROR: Call to undefined method App\Models\Product::orders() {"userId":"9dd5b60e-f072-456e-b9a0-f2bd2bec92ef","exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Models\\Product::orders() at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:67)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('orders')
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'orders', Array)
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(876): Illuminate\\Database\\Eloquent\\Model->__call('orders', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(110): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\Concerns\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(877): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(630): Illuminate\\Database\\Eloquent\\Builder->getRelationWithoutConstraints('orders')
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(719): Illuminate\\Database\\Eloquent\\Builder->withAggregate(Array, '*', 'count')
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->withCount('orders')
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'withCount', Array)
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('withCount', Array)
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(46): Illuminate\\Database\\Eloquent\\Model::__callStatic('withCount', Array)
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(21): App\\Http\\Controllers\\Admin\\DashboardController->salesDashboard()
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Admin\\DashboardController->index()
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('index', Array)
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\DashboardController), 'index')
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#59 {main}
+"} 
+[2024-12-28 19:10:01] local.ERROR: Call to undefined method App\Models\Product::orders() {"userId":"9dd5b60e-f072-456e-b9a0-f2bd2bec92ef","exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Models\\Product::orders() at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:67)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('orders')
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'orders', Array)
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(876): Illuminate\\Database\\Eloquent\\Model->__call('orders', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(110): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\Concerns\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(877): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(630): Illuminate\\Database\\Eloquent\\Builder->getRelationWithoutConstraints('orders')
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(719): Illuminate\\Database\\Eloquent\\Builder->withAggregate(Array, '*', 'count')
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->withCount('orders')
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'withCount', Array)
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('withCount', Array)
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(46): Illuminate\\Database\\Eloquent\\Model::__callStatic('withCount', Array)
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(21): App\\Http\\Controllers\\Admin\\DashboardController->salesDashboard()
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Admin\\DashboardController->index()
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('index', Array)
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\DashboardController), 'index')
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#59 {main}
+"} 
+[2024-12-28 19:10:05] local.ERROR: Call to undefined method App\Models\Product::orders() {"userId":"9dd5b60e-f072-456e-b9a0-f2bd2bec92ef","exception":"[object] (BadMethodCallException(code: 0): Call to undefined method App\\Models\\Product::orders() at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:67)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(36): Illuminate\\Database\\Eloquent\\Model::throwBadMethodCallException('orders')
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'orders', Array)
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(876): Illuminate\\Database\\Eloquent\\Model->__call('orders', Array)
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(110): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\Concerns\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(877): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(630): Illuminate\\Database\\Eloquent\\Builder->getRelationWithoutConstraints('orders')
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\QueriesRelationships.php(719): Illuminate\\Database\\Eloquent\\Builder->withAggregate(Array, '*', 'count')
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->withCount('orders')
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'withCount', Array)
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('withCount', Array)
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(46): Illuminate\\Database\\Eloquent\\Model::__callStatic('withCount', Array)
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\app\\Http\\Controllers\\Admin\\DashboardController.php(21): App\\Http\\Controllers\\Admin\\DashboardController->salesDashboard()
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Admin\\DashboardController->index()
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('index', Array)
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\DashboardController), 'index')
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\tekiplanet-done-with-front\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#59 {main}
+"} 
