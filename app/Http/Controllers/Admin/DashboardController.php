@@ -59,14 +59,18 @@ class DashboardController extends Controller
     private function financeDashboard()
     {
         $totalRevenue = Transaction::where('type', 'credit')->sum('amount');
-        $transactionCount = Transaction::count();
+        $monthlyRevenue = Transaction::where('type', 'credit')
+            ->whereMonth('created_at', now()->month)
+            ->sum('amount');
+        $pendingTransactions = Transaction::where('status', 'pending')->count();
         $activeBankAccounts = BankAccount::where('is_verified', true)->count();
         $recentTransactions = Transaction::latest()->take(5)->get();
         $bankAccounts = BankAccount::latest()->take(5)->get();
 
         return view('admin.dashboard.finance', compact(
             'totalRevenue',
-            'transactionCount',
+            'monthlyRevenue',
+            'pendingTransactions',
             'activeBankAccounts',
             'recentTransactions',
             'bankAccounts'

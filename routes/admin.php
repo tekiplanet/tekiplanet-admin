@@ -197,6 +197,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::post('services/{service}/toggle-featured', [ServiceController::class, 'toggleFeatured'])
             ->name('services.toggle-featured');
 
+
+
         // Add these inside the middleware('auth:admin') group
         Route::prefix('transactions')->name('transactions.')->group(function () {
             Route::get('/', [TransactionController::class, 'index'])->name('index');
