@@ -1,0 +1,13 @@
+[2024-12-29 23:25:16] local.INFO: 2FA Verification Request: {"email":"ruth","code":"545567"} 
+[2024-12-29 23:25:49] local.INFO: 2FA Verification Request: {"email":"omoiguiruth@gmail.com","code":"674883"} 
+[2024-12-29 23:25:50] local.INFO: User found: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","has_2fa":true} 
+[2024-12-29 23:27:10] local.INFO: 2FA Verification Request: {"email":"undefined","code":"789766"} 
+[2024-12-29 23:29:20] local.INFO: 2FA Verification Request: {"email":"omoiguiruth@gmail.com","code":"678908"} 
+[2024-12-29 23:29:20] local.INFO: User found: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","has_2fa":true} 
+[2024-12-29 23:29:35] local.INFO: 2FA Verification Request: {"email":"omoiguiruth@gmail.com","code":"309814"} 
+[2024-12-29 23:29:35] local.INFO: User found: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","has_2fa":true} 
+[2024-12-29 23:31:02] local.INFO: 2FA Verification Request: {"email":"omoiguiruth@gmail.com","code":"764664"} 
+[2024-12-29 23:31:02] local.INFO: User found: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","has_2fa":true} 
+[2024-12-29 23:31:12] local.INFO: 2FA Verification Request: {"email":"omoiguiruth@gmail.com","code":"302138"} 
+[2024-12-29 23:31:12] local.INFO: User found: {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","has_2fa":true} 
+[2024-12-29 23:32:34] local.INFO: 2FA Verification Request: {"code":"123706"} 
