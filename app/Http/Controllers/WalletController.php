@@ -77,7 +77,9 @@ class WalletController extends Controller
             $transaction = $paystack->transaction->initialize([
                 'amount' => $validatedData['amount'] * 100, // Paystack uses kobo
                 'email' => $user->email,
-                'callback_url' => config('app.frontend_url') . '/paystack-callback',
+                'callback_url' => request()->header('User-Agent') && str_contains(request()->header('User-Agent'), 'capacitor') 
+                    ? 'tekiplanet://app/paystack-callback'
+                    : config('app.frontend_url') . '/dashboard/wallet',
                 'reference' => $reference,
                 'metadata' => [
                     'user_id' => $user->id,
