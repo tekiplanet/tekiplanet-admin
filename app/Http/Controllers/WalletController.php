@@ -75,15 +75,14 @@ class WalletController extends Controller
             ]);
 
             $transaction = $paystack->transaction->initialize([
-                'amount' => $validatedData['amount'] * 100, // Paystack uses kobo
+                'amount' => $validatedData['amount'] * 100,
                 'email' => $user->email,
-                'callback_url' => request()->header('User-Agent') && str_contains(request()->header('User-Agent'), 'capacitor') 
-                    ? 'tekiplanet://app/paystack-callback'
-                    : config('app.frontend_url') . '/dashboard/wallet',
+                'callback_url' => config('app.url') . '/api/paystack-callback',
                 'reference' => $reference,
                 'metadata' => [
                     'user_id' => $user->id,
-                    'transaction_type' => 'wallet_funding'
+                    'transaction_type' => 'wallet_funding',
+                    'is_mobile' => str_contains($request->header('User-Agent'), 'capacitor')
                 ]
             ]);
 
@@ -128,10 +127,21 @@ class WalletController extends Controller
         }
 
         try {
-            // Initialize Paystack
+            // First check if transaction is already verified and completed
+            $existingTransaction = Transaction::where('reference_number', $reference)
+                ->where('status', 'completed')
+                ->first();
+
+            if ($existingTransaction) {
+                return response()->json([
+                    'status' => 'success',
+                    'message' => 'Payment already verified',
+                    'amount' => $existingTransaction->amount
+                ], 200);
+            }
+
+            // If not already verified, verify with Paystack
             $paystack = new Paystack(config('services.paystack.secret_key'));
-            
-            // Verify transaction
             $transaction = $paystack->transaction->verify([
                 'reference' => $reference
             ]);
@@ -344,6 +354,77 @@ class WalletController extends Controller
                 'status' => 'error',
                 'message' => 'Failed to process bank transfer payment: ' . $e->getMessage()
             ], 500);
+        }
+    }
+
+    public function handlePaystackCallback(Request $request)
+    {
+        // Verify the transaction first
+        $reference = $request->reference;
+        
+        try {
+            // Initialize Paystack and verify the transaction
+            $paystack = new Paystack(config('services.paystack.secret_key'));
+            $transaction = $paystack->transaction->verify([
+                'reference' => $reference
+            ]);
+
+            Log::info('Paystack Callback Received', [
+                'reference' => $reference,
+                'status' => $transaction->data->status,
+                'amount' => $transaction->data->amount / 100
+            ]);
+
+            if ($transaction->data->status === 'success') {
+                // Find and update the pending transaction
+                $pendingTransaction = Transaction::where('reference_number', $reference)
+                    ->where('status', 'pending')
+                    ->first();
+
+                if ($pendingTransaction) {
+                    DB::transaction(function () use ($pendingTransaction, $transaction) {
+                        // Update transaction status
+                        $pendingTransaction->update([
+                            'status' => 'completed',
+                            'type' => 'credit'
+                        ]);
+
+                        // Update user wallet balance
+                        $user = User::find($pendingTransaction->user_id);
+                        $user->wallet_balance += $pendingTransaction->amount;
+                        $user->save();
+                    });
+                }
+
+                // Redirect based on platform
+                if (str_contains($request->header('User-Agent'), 'capacitor')) {
+                    $params = http_build_query([
+                        'reference' => $reference,
+                        'trxref' => $request->trxref,
+                        'status' => 'success'
+                    ]);
+                    return redirect()->away("tekiplanet://app/paystack-callback?" . $params);
+                }
+
+                return redirect()->away(config('app.frontend_url') . "/paystack-callback?" . $params);
+            }
+
+            // Handle failed transaction
+            throw new \Exception('Payment verification failed');
+
+        } catch (\Exception $e) {
+            Log::error('Paystack Callback Error: ' . $e->getMessage());
+            
+            $errorParams = http_build_query([
+                'reference' => $reference,
+                'status' => 'failed',
+                'message' => $e->getMessage()
+            ]);
+
+            if (str_contains($request->header('User-Agent'), 'capacitor')) {
+                return redirect()->away("tekiplanet://app/paystack-callback?" . $errorParams);
+            }
+            return redirect()->away(config('app.frontend_url') . "/paystack-callback?" . $errorParams);
         }
     }
 }

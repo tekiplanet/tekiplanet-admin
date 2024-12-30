@@ -453,3 +453,5 @@ Route::middleware('auth:sanctum')->group(function () {
 
 // Add this with your other auth routes
 Route::post('/verify-2fa', [TwoFactorController::class, 'verify']);
+
+Route::post('paystack-callback', [WalletController::class, 'handlePaystackCallback']);
