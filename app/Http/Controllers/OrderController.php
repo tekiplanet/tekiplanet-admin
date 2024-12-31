@@ -6,6 +6,7 @@ use App\Models\Order;
 use App\Models\Cart;
 use App\Models\ShippingAddress;
 use App\Models\ZoneShippingRate;
+use App\Models\ShippingMethod;
 use App\Models\OrderItem;
 use App\Models\Transaction;
 use App\Models\OrderTracking;
@@ -42,11 +43,53 @@ class OrderController extends Controller
             
             // Get shipping address and zone rate
             $shippingAddress = ShippingAddress::with('state')->findOrFail($request->shipping_address_id);
-            $zoneRate = ZoneShippingRate::where('zone_id', $shippingAddress->state_id)
-                ->where('shipping_method_id', $request->shipping_method_id)
-                ->firstOrFail();
-    
-            $shippingCost = $zoneRate->rate;
+
+            // Add debugging here
+            \Log::info('Shipping Rate Debug', [
+                'state_id' => $shippingAddress->state_id,
+                'shipping_method_id' => $request->shipping_method_id,
+                'shipping_address' => $shippingAddress->toArray()
+            ]);
+
+            // Add try-catch for zone rate query
+            try {
+                // First try to get zone-specific rate
+                $zoneRate = ZoneShippingRate::where('zone_id', $shippingAddress->state_id)
+                    ->where('shipping_method_id', $request->shipping_method_id)
+                    ->first();
+
+                if ($zoneRate) {
+                    \Log::info('Zone-specific rate found', [
+                        'zone_rate' => $zoneRate->toArray()
+                    ]);
+                    $shippingCost = $zoneRate->rate;
+                } else {
+                    // If no zone-specific rate, get base rate from shipping method
+                    $shippingMethod = ShippingMethod::findOrFail($request->shipping_method_id);
+                    \Log::info('Using base rate', [
+                        'shipping_method' => $shippingMethod->toArray()
+                    ]);
+                    $shippingCost = $shippingMethod->base_cost;
+                }
+
+                // Add debug logging for shipping cost
+                \Log::info('Final shipping cost', [
+                    'shipping_cost' => $shippingCost
+                ]);
+
+                if (!$shippingCost) {
+                    throw new \Exception('Unable to determine shipping cost');
+                }
+
+            } catch (\Exception $e) {
+                \Log::error('Shipping Rate Error', [
+                    'error' => $e->getMessage(),
+                    'state_id' => $shippingAddress->state_id,
+                    'shipping_method_id' => $request->shipping_method_id
+                ]);
+                throw $e;
+            }
+
             $total = $cart->current_total + $shippingCost;
     
             // Check wallet balance
