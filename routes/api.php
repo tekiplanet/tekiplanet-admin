@@ -47,6 +47,8 @@ use App\Http\Controllers\WithdrawalController;
 use App\Http\Controllers\NotificationController;
 use App\Services\NotificationService;
 use Illuminate\Support\Facades\Broadcast;
+use App\Http\Controllers\Auth\PasswordResetController;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -455,3 +457,27 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::post('/verify-2fa', [TwoFactorController::class, 'verify']);
 
 Route::post('paystack-callback', [WalletController::class, 'handlePaystackCallback']);
+
+Route::prefix('auth')->group(function () {
+    // Add these new routes
+    Route::post('forgot-password', [PasswordResetController::class, 'sendResetCode']);
+    Route::post('verify-recovery-code', [PasswordResetController::class, 'verifyCode']);
+    Route::post('reset-password', [PasswordResetController::class, 'resetPassword']);
+});
+
+// Add this temporary route to test email
+Route::get('/test-mail', function() {
+    try {
+        Mail::raw('Test email from Laravel', function($message) {
+            $message->to('omoiguiruth@gmail.com')
+                   ->subject('Test Email');
+        });
+        return 'Mail sent successfully';
+    } catch (\Exception $e) {
+        Log::error('Mail test failed', [
+            'error' => $e->getMessage(),
+            'trace' => $e->getTraceAsString()
+        ]);
+        return 'Mail error: ' . $e->getMessage() . "\n\nTrace: " . $e->getTraceAsString();
+    }
+});
