@@ -49,6 +49,7 @@ use App\Services\NotificationService;
 use Illuminate\Support\Facades\Broadcast;
 use App\Http\Controllers\Auth\PasswordResetController;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\ProductRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -480,4 +481,11 @@ Route::get('/test-mail', function() {
         ]);
         return 'Mail error: ' . $e->getMessage() . "\n\nTrace: " . $e->getTraceAsString();
     }
+});
+
+// Add these routes in your protected routes group
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/product-requests', [ProductRequestController::class, 'index']);
+    Route::post('/product-requests', [ProductRequestController::class, 'store']);
+    Route::get('/product-requests/{productRequest}', [ProductRequestController::class, 'show']);
 });

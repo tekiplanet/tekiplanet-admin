@@ -198,6 +198,19 @@
                     </li>
                     @endif
 
+                    <!-- Product Requests - visible to sales and super admin -->
+                    @if($admin->hasRole(AdminRole::SALES) || $admin->isSuperAdmin())
+                    <li>
+                        <a href="{{ route('admin.product-requests.index') }}" 
+                           class="{{ request()->routeIs('admin.product-requests.*') ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800' }} group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                            <svg class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                            Product Requests
+                        </a>
+                    </li>
+                    @endif
+
                     <!-- Hide all other menu items for sales role -->
                     @unless($admin->hasRole(AdminRole::SALES))
                     <!-- All other menu items -->
@@ -265,7 +278,6 @@
                 </ul>
             </li>
         
-
 
 
 

@@ -35,6 +35,7 @@ use App\Http\Controllers\Admin\ProjectStageController;
 use App\Http\Controllers\Admin\ProjectTeamMemberController;
 use App\Http\Controllers\Admin\ProjectFileController;
 use App\Http\Controllers\Admin\ProjectInvoiceController;
+use App\Http\Controllers\Admin\ProductRequestController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -328,6 +329,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 Route::post('/', [ProjectInvoiceController::class, 'store'])->name('store');
                 Route::patch('/{invoice}', [ProjectInvoiceController::class, 'update'])->name('update');
                 Route::delete('/{invoice}', [ProjectInvoiceController::class, 'destroy'])->name('destroy');
+            });
+        });
+
+        // Product Request routes
+        Route::middleware('admin.roles:super_admin,admin,sales')->group(function () {
+            Route::prefix('product-requests')->name('product-requests.')->group(function () {
+                Route::get('/', [ProductRequestController::class, 'index'])->name('index');
+                Route::get('/{productRequest}', [ProductRequestController::class, 'show'])->name('show');
+                Route::patch('/{productRequest}/status', [ProductRequestController::class, 'updateStatus'])->name('update-status');
+                Route::patch('/{productRequest}/note', [ProductRequestController::class, 'updateNote'])->name('update-note');
             });
         });
     });
