@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\PasswordResetMail;
 use Illuminate\Support\Facades\Log;
+use App\Mail\PasswordChangedMail;
 
 class PasswordResetController extends Controller
 {
@@ -128,17 +129,38 @@ class PasswordResetController extends Controller
             ], 422);
         }
 
-        // Update password
-        $user = User::where('email', $request->email)->first();
-        $user->password = Hash::make($request->password);
-        $user->save();
+        try {
+            // Update password
+            $user = User::where('email', $request->email)->first();
+            $user->password = Hash::make($request->password);
+            $user->save();
 
-        // Mark reset code as used
-        $reset->used = true;
-        $reset->save();
+            // Mark reset code as used
+            $reset->used = true;
+            $reset->save();
 
-        return response()->json([
-            'message' => 'Password reset successfully'
-        ]);
+            // Queue password changed notification email
+            Mail::to($request->email)
+                ->queue(new PasswordChangedMail($request->ip()));
+
+            Log::info('Password changed notification queued', [
+                'email' => $request->email,
+                'ip' => $request->ip()
+            ]);
+
+            return response()->json([
+                'message' => 'Password reset successfully'
+            ]);
+
+        } catch (\Exception $e) {
+            Log::error('Password reset failed', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
+
+            return response()->json([
+                'message' => 'Failed to reset password'
+            ], 500);
+        }
     }
 } 
