@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 
 class OrderTracking extends Model
 {
-    protected $table = 'order_tracking';
-
     use HasUuids;
+
+    protected $table = 'order_tracking';
 
     const STATUS_PENDING = 'pending';
     const STATUS_PICKED_UP = 'picked_up';
