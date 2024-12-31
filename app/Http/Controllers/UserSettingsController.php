@@ -17,8 +17,8 @@ class UserSettingsController extends Controller
     {
         try {
             $validator = Validator::make($request->all(), [
-                'first_name' => 'required|string|min:2',
-                'last_name' => 'required|string|min:2',
+                'first_name' => 'string|min:2',
+                'last_name' => 'string|min:2',
                 'email' => [
                     'required',
                     'email',
@@ -26,9 +26,7 @@ class UserSettingsController extends Controller
                 ],
             ], [
                 // Custom validation messages
-                'first_name.required' => 'Please enter your first name',
                 'first_name.min' => 'First name must be at least 2 characters',
-                'last_name.required' => 'Please enter your last name',
                 'last_name.min' => 'Last name must be at least 2 characters',
                 'email.required' => 'Please enter your email address',
                 'email.email' => 'Please enter a valid email address',
