@@ -16,11 +16,15 @@ class CouponUsage extends Model
         'coupon_id',
         'user_id',
         'order_id',
+        'order_amount',
+        'discount_amount',
         'used_at'
     ];
 
     protected $casts = [
-        'used_at' => 'datetime'
+        'used_at' => 'datetime',
+        'order_amount' => 'decimal:2',
+        'discount_amount' => 'decimal:2'
     ];
 
     public function coupon(): BelongsTo

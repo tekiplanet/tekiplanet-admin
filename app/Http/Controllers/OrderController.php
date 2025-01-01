@@ -11,11 +11,13 @@ use App\Models\OrderItem;
 use App\Models\Transaction;
 use App\Models\OrderTracking;
 use App\Models\Coupon;
+use App\Models\CouponUsage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use PDF;
 use NumberFormatter;
+use Illuminate\Support\Str;
 
 class OrderController extends Controller
 {
@@ -130,8 +132,11 @@ class OrderController extends Controller
             if ($coupon) {
                 $coupon->increment('times_used');
                 $coupon->usage()->create([
+                    'id' => Str::uuid(),
                     'user_id' => auth()->id(),
                     'order_id' => $order->id,
+                    'order_amount' => $request->subtotal, // Original amount before discount
+                    'discount_amount' => $request->discount_amount, // The actual discount applied
                     'used_at' => now()
                 ]);
             }
@@ -192,6 +197,25 @@ class OrderController extends Controller
             ]);
     
             DB::commit();
+    
+            // If a coupon was applied
+            if ($request->coupon_id) {
+                $coupon = Coupon::find($request->coupon_id);
+                
+                // Create coupon usage record
+                CouponUsage::create([
+                    'id' => Str::uuid(),
+                    'coupon_id' => $coupon->id,
+                    'user_id' => auth()->id(),
+                    'order_id' => $order->id,
+                    'order_amount' => $request->subtotal, // Original amount before discount
+                    'discount_amount' => $request->discount_amount, // The actual discount applied
+                    'used_at' => now()
+                ]);
+
+                // Update coupon usage count if needed
+                $coupon->increment('times_used');
+            }
     
             return response()->json([
                 'message' => 'Order placed successfully',

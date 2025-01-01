@@ -36,6 +36,7 @@ use App\Http\Controllers\Admin\ProjectTeamMemberController;
 use App\Http\Controllers\Admin\ProjectFileController;
 use App\Http\Controllers\Admin\ProjectInvoiceController;
 use App\Http\Controllers\Admin\ProductRequestController;
+use App\Http\Controllers\Admin\CouponController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -340,6 +341,16 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 Route::patch('/{productRequest}/status', [ProductRequestController::class, 'updateStatus'])->name('update-status');
                 Route::patch('/{productRequest}/note', [ProductRequestController::class, 'updateNote'])->name('update-note');
             });
+        });
+
+        // Coupon Management
+        Route::prefix('coupons')->name('coupons.')->group(function () {
+            Route::get('/', [CouponController::class, 'index'])->name('index');
+            Route::post('/', [CouponController::class, 'store'])->name('store');
+            Route::get('/{coupon}', [CouponController::class, 'show'])->name('show');
+            Route::patch('/{coupon}', [CouponController::class, 'update'])->name('update');
+            Route::delete('/{coupon}', [CouponController::class, 'destroy'])->name('destroy');
+            Route::patch('/{coupon}/toggle', [CouponController::class, 'toggle'])->name('toggle');
         });
     });
 }); 

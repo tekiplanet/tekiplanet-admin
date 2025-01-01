@@ -56,6 +56,11 @@ class Coupon extends Model
         return $this->hasMany(CouponUsage::class);
     }
 
+    public function usages(): HasMany
+    {
+        return $this->hasMany(CouponUsage::class);
+    }
+
     public function isValid(): bool
     {
         if (!$this->is_active) {
