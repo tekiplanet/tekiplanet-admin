@@ -145,8 +145,8 @@ document.getElementById('couponForm').addEventListener('submit', async function(
     const isEdit = formData.get('id');
     const formObject = Object.fromEntries(formData);
     
-    // Convert checkbox value to boolean
-    formObject.is_active = formData.get('is_active') === 'on';
+    // Properly handle checkbox - if it's not in formData, it means it's unchecked
+    formObject.is_active = formData.has('is_active');
     
     try {
         const response = await fetch(`/admin/coupons${isEdit ? '/' + isEdit : ''}`, {
