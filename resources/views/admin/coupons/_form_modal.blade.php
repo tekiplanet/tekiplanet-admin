@@ -6,6 +6,8 @@
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full dark:bg-gray-800">
             <form id="couponForm" class="px-4 pt-5 pb-4 sm:p-6">
+                <input type="hidden" name="id" id="couponId">
+                
                 <h3 id="modalTitle" class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">
                     Create Coupon
                 </h3>
@@ -18,17 +20,6 @@
                         </label>
                         <input type="text" 
                                name="code" 
-                               required
-                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
-                    </div>
-
-                    <!-- Description -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                            Description
-                        </label>
-                        <input type="text" 
-                               name="description" 
                                required
                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
                     </div>
@@ -152,16 +143,26 @@ document.getElementById('couponForm').addEventListener('submit', async function(
     
     const formData = new FormData(this);
     const isEdit = formData.get('id');
+    const formObject = Object.fromEntries(formData);
+    
+    // Convert checkbox value to boolean
+    formObject.is_active = formData.get('is_active') === 'on';
     
     try {
         const response = await fetch(`/admin/coupons${isEdit ? '/' + isEdit : ''}`, {
             method: isEdit ? 'PATCH' : 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Accept': 'application/json',
                 'X-CSRF-TOKEN': '{{ csrf_token() }}'
             },
-            body: JSON.stringify(Object.fromEntries(formData))
+            body: JSON.stringify(formObject)
         });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Failed to save coupon');
+        }
 
         const data = await response.json();
 
@@ -176,5 +177,26 @@ document.getElementById('couponForm').addEventListener('submit', async function(
         showNotification('Error', error.message, 'error');
     }
 });
+
+function openEditModal(coupon) {
+    document.getElementById('modalTitle').textContent = 'Edit Coupon';
+    const form = document.getElementById('couponForm');
+    
+    // Set the coupon ID
+    document.getElementById('couponId').value = coupon.id;
+    
+    // Fill in the form fields
+    form.querySelector('[name="code"]').value = coupon.code;
+    form.querySelector('[name="value_type"]').value = coupon.value_type;
+    form.querySelector('[name="value"]').value = coupon.value;
+    form.querySelector('[name="min_order_amount"]').value = coupon.min_order_amount;
+    form.querySelector('[name="max_discount"]').value = coupon.max_discount || '';
+    form.querySelector('[name="starts_at"]').value = coupon.starts_at.split(' ')[0];
+    form.querySelector('[name="expires_at"]').value = coupon.expires_at.split(' ')[0];
+    form.querySelector('[name="usage_limit_per_user"]').value = coupon.usage_limit_per_user || '';
+    form.querySelector('[name="is_active"]').checked = coupon.is_active;
+
+    document.getElementById('couponModal').classList.remove('hidden');
+}
 </script>
 @endpush 

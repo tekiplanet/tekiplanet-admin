@@ -22,10 +22,6 @@
                     <p class="font-semibold">{{ $coupon->code }}</p>
                 </div>
                 <div>
-                    <label class="text-sm text-gray-500">Description</label>
-                    <p>{{ $coupon->description }}</p>
-                </div>
-                <div>
                     <label class="text-sm text-gray-500">Value</label>
                     <p>
                         @if($coupon->value_type === 'percentage')

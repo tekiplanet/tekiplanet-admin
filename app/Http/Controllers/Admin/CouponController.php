@@ -29,7 +29,6 @@ class CouponController extends Controller
     {
         $validated = $request->validate([
             'code' => 'required|string|unique:coupons,code|max:50',
-            'description' => 'required|string|max:255',
             'value_type' => 'required|in:fixed,percentage',
             'value' => 'required|numeric|min:0',
             'min_order_amount' => 'required|numeric|min:0',
@@ -71,7 +70,7 @@ class CouponController extends Controller
     public function update(Request $request, Coupon $coupon)
     {
         $validated = $request->validate([
-            'description' => 'required|string|max:255',
+            'code' => 'required|string|max:50|unique:coupons,code,'.$coupon->id,
             'value_type' => 'required|in:fixed,percentage',
             'value' => 'required|numeric|min:0',
             'min_order_amount' => 'required|numeric|min:0',
