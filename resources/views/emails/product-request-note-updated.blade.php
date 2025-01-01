@@ -15,7 +15,7 @@
             </li>
             <li style="margin-bottom: 10px;">
                 <strong>Admin Note:</strong><br>
-                {{ $productRequest->admin_note }}
+                {{ $productRequest->admin_response }}
             </li>
         </ul>
     </div>

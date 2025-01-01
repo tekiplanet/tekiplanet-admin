@@ -34,7 +34,6 @@ class ProductRequestStatusUpdated extends Notification implements ShouldQueue
                 'productRequest' => $this->productRequest,
                 'oldStatus' => $this->oldStatus,
                 'user' => $notifiable
-            ])
-            ->later(now()->addSeconds(10));
+            ]);
     }
 } 

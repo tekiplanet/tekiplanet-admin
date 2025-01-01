@@ -68,8 +68,8 @@ class ProductRequestController extends Controller
             ]
         ], $productRequest->user);
 
-        // Send email notification
-        $productRequest->user->notify((new ProductRequestStatusUpdated($productRequest, $oldStatus))->delay(now()->addSeconds(5)));
+        // Queue email notification
+        $productRequest->user->notify(new ProductRequestStatusUpdated($productRequest, $oldStatus));
 
         return response()->json([
             'success' => true,
@@ -94,8 +94,8 @@ class ProductRequestController extends Controller
             'action_url' => "/product-requests/{$productRequest->id}"
         ], $productRequest->user);
 
-        // Send email notification
-        $productRequest->user->notify((new ProductRequestNoteUpdated($productRequest))->delay(now()->addSeconds(5)));
+        // Queue email notification
+        $productRequest->user->notify(new ProductRequestNoteUpdated($productRequest));
 
         return response()->json([
             'success' => true,
