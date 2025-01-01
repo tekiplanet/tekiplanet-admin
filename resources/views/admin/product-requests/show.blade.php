@@ -55,8 +55,10 @@
                 </div>
 
                 <div>
-                    <label class="text-sm text-gray-500">Additional Requirements</label>
-                    <p class="whitespace-pre-wrap">{{ $productRequest->requirements }}</p>
+                    <label class="text-sm text-gray-500">Additional Details</label>
+                    <p class="mt-1 whitespace-pre-wrap text-gray-700 dark:text-gray-300">
+                        {{ $productRequest->additional_details ?? 'No additional details provided.' }}
+                    </p>
                 </div>
             </div>
         </div>
@@ -68,7 +70,7 @@
                 <div class="space-y-4">
                     <div>
                         <label class="text-sm text-gray-500">Name</label>
-                        <p class="font-medium">{{ $productRequest->user->name }}</p>
+                        <p class="font-medium">{{ $productRequest->user->first_name }} {{ $productRequest->user->last_name }}</p>
                     </div>
                     <div>
                         <label class="text-sm text-gray-500">Email</label>

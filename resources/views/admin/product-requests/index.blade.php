@@ -52,6 +52,9 @@
                             Quantity
                         </th>
                         <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                            Additional Details
+                        </th>
+                        <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                             Status
                         </th>
                         <th class="px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
@@ -66,9 +69,16 @@
                     @forelse($requests as $request)
                         <tr>
                             <td class="px-6 py-4">{{ $request->product_name }}</td>
-                            <td class="px-6 py-4">{{ $request->user->name }}</td>
+                            <td class="px-6 py-4">
+                                {{ $request->user->first_name }} {{ $request->user->last_name }}
+                            </td>
                             <td class="px-6 py-4">₦{{ number_format($request->min_price) }} - ₦{{ number_format($request->max_price) }}</td>
                             <td class="px-6 py-4">{{ $request->quantity_needed }}</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-sm text-gray-600 dark:text-gray-400">
+                                    {{ Str::limit($request->additional_details, 50) }}
+                                </span>
+                            </td>
                             <td class="px-6 py-4">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
                                     {{ $request->status === 'completed' ? 'bg-green-100 text-green-800' : 
