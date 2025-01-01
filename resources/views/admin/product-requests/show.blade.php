@@ -90,7 +90,7 @@
                     </button>
                 </div>
                 <div class="whitespace-pre-wrap">
-                    {{ $productRequest->admin_note ?? 'No notes added yet.' }}
+                    {{ $productRequest->admin_response ?? 'No notes added yet.' }}
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
                     <textarea id="noteText" 
                               rows="4" 
                               class="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                              placeholder="Enter admin note...">{{ $productRequest->admin_note }}</textarea>
+                              placeholder="Enter admin note...">{{ $productRequest->admin_response }}</textarea>
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
@@ -220,7 +220,7 @@ async function updateNote() {
                 'Content-Type': 'application/json',
                 'X-CSRF-TOKEN': '{{ csrf_token() }}'
             },
-            body: JSON.stringify({ admin_note: note })
+            body: JSON.stringify({ admin_response: note })
         });
 
         const data = await response.json();

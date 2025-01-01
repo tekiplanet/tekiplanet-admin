@@ -31,6 +31,7 @@ class ProductRequestNoteUpdated extends Notification implements ShouldQueue
             ->view('emails.product-request-note-updated', [
                 'productRequest' => $this->productRequest,
                 'user' => $notifiable
-            ]);
+            ])
+            ->later(now()->addSeconds(10));
     }
 } 

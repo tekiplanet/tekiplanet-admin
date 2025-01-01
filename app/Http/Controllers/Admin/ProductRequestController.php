@@ -80,7 +80,7 @@ class ProductRequestController extends Controller
     public function updateNote(Request $request, ProductRequest $productRequest)
     {
         $validated = $request->validate([
-            'admin_note' => 'required|string'
+            'admin_response' => 'required|string'
         ]);
 
         $productRequest->update($validated);
