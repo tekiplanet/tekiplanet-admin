@@ -50,6 +50,7 @@ use Illuminate\Support\Facades\Broadcast;
 use App\Http\Controllers\Auth\PasswordResetController;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ProductRequestController;
+use App\Http\Controllers\CouponController;
 
 /*
 |--------------------------------------------------------------------------
@@ -488,4 +489,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/product-requests', [ProductRequestController::class, 'index']);
     Route::post('/product-requests', [ProductRequestController::class, 'store']);
     Route::get('/product-requests/{productRequest}', [ProductRequestController::class, 'show']);
+    
+    // Add the coupon route here
+    Route::post('/coupons/validate', [CouponController::class, 'validateCoupon']);
 });

@@ -10,6 +10,7 @@ use App\Models\ShippingMethod;
 use App\Models\OrderItem;
 use App\Models\Transaction;
 use App\Models\OrderTracking;
+use App\Models\Coupon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -26,7 +27,8 @@ class OrderController extends Controller
         $request->validate([
             'shipping_address_id' => 'required|exists:shipping_addresses,id',
             'shipping_method_id' => 'required|exists:shipping_methods,id',
-            'payment_method' => 'required|in:wallet'
+            'payment_method' => 'required|in:wallet',
+            'coupon_code' => 'nullable|string'
         ], [
             'shipping_address_id.required' => 'Shipping address is required',
             'shipping_address_id.exists' => 'Invalid shipping address',
@@ -41,6 +43,16 @@ class OrderController extends Controller
             // Get cart total and shipping cost
             $cart = Cart::where('user_id', auth()->id())->first();
             
+            // Handle coupon if provided
+            $discount = 0;
+            $coupon = null;
+            if ($request->coupon_code) {
+                $coupon = Coupon::where('code', $request->coupon_code)->first();
+                if ($coupon && $coupon->isValid() && $coupon->canBeUsedByUser(auth()->user())) {
+                    $discount = $coupon->calculateDiscount($cart->current_total);
+                }
+            }
+
             // Get shipping address and zone rate
             $shippingAddress = ShippingAddress::with('state')->findOrFail($request->shipping_address_id);
 
@@ -90,7 +102,8 @@ class OrderController extends Controller
                 throw $e;
             }
 
-            $total = $cart->current_total + $shippingCost;
+            // Update total calculation to include discount
+            $total = $cart->current_total + $shippingCost - $discount;
     
             // Check wallet balance
             $user = auth()->user();
@@ -98,18 +111,30 @@ class OrderController extends Controller
                 throw new \Exception('Insufficient wallet balance');
             }
     
-            // Create order
+            // Create order with coupon_id instead of coupon_code
             $order = Order::create([
                 'user_id' => auth()->id(),
                 'shipping_address_id' => $request->shipping_address_id,
                 'shipping_method_id' => $request->shipping_method_id,
                 'subtotal' => $cart->current_total,
                 'shipping_cost' => $shippingCost,
+                'discount' => $discount,
                 'total' => $total,
                 'status' => 'pending',
                 'payment_method' => $request->payment_method,
-                'payment_status' => 'pending'
+                'payment_status' => 'pending',
+                'coupon_id' => $coupon ? $coupon->id : null
             ]);
+    
+            // If coupon was used, record usage
+            if ($coupon) {
+                $coupon->increment('times_used');
+                $coupon->usage()->create([
+                    'user_id' => auth()->id(),
+                    'order_id' => $order->id,
+                    'used_at' => now()
+                ]);
+            }
     
             // Create initial order tracking
             OrderTracking::create([

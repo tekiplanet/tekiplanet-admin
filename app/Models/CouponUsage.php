@@ -10,6 +10,8 @@ class CouponUsage extends Model
 {
     use HasUuids;
 
+    protected $table = 'coupon_usage';
+
     protected $fillable = [
         'coupon_id',
         'user_id',
