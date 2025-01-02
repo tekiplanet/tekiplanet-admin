@@ -37,3 +37,12 @@ Broadcast::channel('private-notifications.{userId}', function ($user, $userId) {
         return false;
     }
 });
+
+Broadcast::channel('quote.{quoteId}', function ($user, $quoteId) {
+    \Log::info('Channel authorization attempt', [
+        'user_id' => $user->id,
+        'quote_id' => $quoteId,
+        'time' => now()
+    ]);
+    return true; // For testing, allow all
+});

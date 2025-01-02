@@ -31,7 +31,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Broadcast::routes(['middleware' => ['auth:sanctum']]);
+// Broadcast::routes(['middleware' => ['auth:sanctum']]);
 
 // Include admin routes
 require __DIR__.'/admin.php';

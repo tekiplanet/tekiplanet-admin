@@ -138,8 +138,8 @@ class QuoteController extends Controller
         ], $quote->user);
 
         // Broadcast the new message
-        broadcast(new NewQuoteMessage($message))->toOthers();
-
+        event(new NewQuoteMessage($message));
+        
         return response()->json([
             'success' => true,
             'message' => 'Message sent successfully',
