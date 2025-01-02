@@ -46,4 +46,9 @@ return [
         'key' => env('EXCHANGE_RATE_API_KEY'),
     ],
 
+    'firebase' => [
+        'credentials' => env('FIREBASE_CREDENTIALS'),
+        'database_url' => env('FIREBASE_DATABASE_URL'),
+    ]    
+
 ];

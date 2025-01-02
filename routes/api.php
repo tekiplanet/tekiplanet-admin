@@ -51,6 +51,8 @@ use App\Http\Controllers\Auth\PasswordResetController;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ProductRequestController;
 use App\Http\Controllers\CouponController;
+use App\Http\Controllers\DeviceTokenController;
+use App\Notifications\TestPushNotification;
 
 /*
 |--------------------------------------------------------------------------
@@ -492,4 +494,47 @@ Route::middleware('auth:sanctum')->group(function () {
     
     // Add the coupon route here
     Route::post('/coupons/validate', [CouponController::class, 'validateCoupon']);
+});
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/device-tokens', [DeviceTokenController::class, 'store']);
+});
+
+Route::middleware('auth:sanctum')->post('/test-push-notification', function (Request $request) {
+    try {
+        $user = $request->user();
+        Log::info('Testing push notification', ['user_id' => $user->id]);
+        
+        // Get device tokens
+        $tokens = $user->deviceTokens()->pluck('token');
+        Log::info('Device tokens found', ['count' => $tokens->count(), 'tokens' => $tokens]);
+        
+        // Send test notification
+        $result = app(NotificationService::class)->send([
+            'type' => 'test',
+            'title' => 'Test Notification ' . now()->format('H:i:s'),
+            'message' => 'This is a test notification sent at ' . now()->format('Y-m-d H:i:s'),
+            'icon' => 'bell',
+            'action_url' => '/dashboard',
+            'extra_data' => [
+                'test' => true,
+                'timestamp' => now()->timestamp
+            ]
+        ], $user);
+        
+        return response()->json([
+            'message' => 'Test notification sent',
+            'tokens' => $tokens,
+            'result' => $result
+        ]);
+    } catch (\Exception $e) {
+        Log::error('Test notification failed', [
+            'error' => $e->getMessage(),
+            'trace' => $e->getTraceAsString()
+        ]);
+        return response()->json([
+            'error' => $e->getMessage(),
+            'detail' => config('app.debug') ? $e->getTraceAsString() : null
+        ], 500);
+    }
 });

@@ -163,6 +163,11 @@ class UserController extends Controller
             // Send email notification
             $user->notify(new TransactionNotification($transaction));
 
+            if ($user->deviceTokens()->exists()) {
+                // The BaseNotification class will handle both in-app and push notifications
+                $user->notify(new TransactionNotification($transaction));
+            }
+
             return response()->json([
                 'message' => 'Transaction created successfully',
                 'transaction' => $transaction

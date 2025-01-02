@@ -173,6 +173,7 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         App\Providers\SettingsServiceProvider::class,
         App\Providers\BroadcastServiceProvider::class,
+        App\Providers\FirebaseServiceProvider::class,
     ])->toArray(),
 
     /*
