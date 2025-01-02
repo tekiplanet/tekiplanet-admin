@@ -6,3 +6,941 @@
 [2025-01-02 12:28:36] local.INFO: Quote Fields: {"fields":{"9dd3cbcb-bfcd-43b8-ae68-5b1c1276e7a6":"Adobe XD","9dd3ce12-a1bc-4d38-8bc2-eda6e136b5aa":"Mobile App (iOS/Android),Desktop Application,Web Application"}} 
 [2025-01-02 12:28:36] local.INFO: Service Quote Fields: {"fields":[{"id":"9dd3cbcb-bfcd-43b8-ae68-5b1c1276e7a6","service_id":"9dc573d9-85c6-416e-ae7b-8e3c2119e41e","name":"preferred_tools","label":"Preferred Tools","type":"select","required":true,"order":1,"validation_rules":null,"options":["Figma","Adobe XD","Sketch","Other (specify)"],"created_at":"2024-12-27T20:03:47.000000Z","updated_at":"2024-12-27T20:11:34.000000Z"},{"id":"9dd3ce12-a1bc-4d38-8bc2-eda6e136b5aa","service_id":"9dc573d9-85c6-416e-ae7b-8e3c2119e41e","name":"platform_type","label":"Platform Type","type":"multi-select","required":true,"order":2,"validation_rules":null,"options":["Mobile App (iOS/Android)","Web Application","Desktop Application","Other"],"created_at":"2024-12-27T20:10:09.000000Z","updated_at":"2024-12-27T20:11:34.000000Z"}]} 
 [2025-01-02 12:31:29] local.INFO: FCM notification sent successfully {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","response":{"name":"projects/tekiplanet-app/messages/0:1735821090161785%20eb1e6a20eb1e6a"}} 
+[2025-01-02 12:35:29] local.ERROR: Route [admin.users.notify-bulk] not defined. {"view":{"view":"C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1209917671 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1780</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1209917671\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","users":"<pre class=sf-dump id=sf-dump-1913901515 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Pagination\\LengthAwarePaginator</span> {<a class=sf-dump-ref>#3037</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note title=\"Illuminate\\Database\\Eloquent\\Collection
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Database\\Eloquent</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Collection</span> {<a class=sf-dump-ref>#3046</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3023</a> &#8230;33}
+      <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3022</a> &#8230;33}
+      <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3021</a> &#8230;33}
+      <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3020</a> &#8230;33}
+      <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3019</a> &#8230;33}
+      <span class=sf-dump-index>5</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3018</a> &#8230;33}
+      <span class=sf-dump-index>6</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3017</a> &#8230;33}
+      <span class=sf-dump-index>7</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3016</a> &#8230;33}
+      <span class=sf-dump-index>8</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3015</a> &#8230;33}
+      <span class=sf-dump-index>9</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3014</a> &#8230;33}
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>10</span>
+  #<span class=sf-dump-protected title=\"Protected property\">currentPage</span>: <span class=sf-dump-num>1</span>
+  #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">query</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fragment</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">pageName</span>: \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  +<span class=sf-dump-public title=\"Public property\">onEachSide</span>: <span class=sf-dump-num>3</span>
+  #<span class=sf-dump-protected title=\"Protected property\">options</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+    \"<span class=sf-dump-key>pageName</span>\" => \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">total</span>: <span class=sf-dump-num>18</span>
+  #<span class=sf-dump-protected title=\"Protected property\">lastPage</span>: <span class=sf-dump-num>2</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1913901515\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","filters":"<pre class=sf-dump id=sf-dump-514561405 data-indent-pad=\"  \"><span class=sf-dump-note>array:3</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>search</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>account_type</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>status</span>\" => <span class=sf-dump-const>null</span>
+</samp>]
+</pre><script>Sfdump(\"sf-dump-514561405\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","statusOptions":"<pre class=sf-dump id=sf-dump-1954810596 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>active</span>\" => \"<span class=sf-dump-str title=\"6 characters\">Active</span>\"
+  \"<span class=sf-dump-key>inactive</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Inactive</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1954810596\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":"9dce97a3-049d-47a5-8e3f-2083fe10966a","exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php(88): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\storage\\framework\\views\\e5ecdea37a90d3a69d7582aeb14799cf.php(89): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+"} 
+[2025-01-02 12:35:37] local.ERROR: Route [admin.users.notify-bulk] not defined. {"view":{"view":"C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-659033670 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1780</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-659033670\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","users":"<pre class=sf-dump id=sf-dump-363067597 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Pagination\\LengthAwarePaginator</span> {<a class=sf-dump-ref>#3037</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note title=\"Illuminate\\Database\\Eloquent\\Collection
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Database\\Eloquent</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Collection</span> {<a class=sf-dump-ref>#3046</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3023</a> &#8230;33}
+      <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3022</a> &#8230;33}
+      <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3021</a> &#8230;33}
+      <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3020</a> &#8230;33}
+      <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3019</a> &#8230;33}
+      <span class=sf-dump-index>5</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3018</a> &#8230;33}
+      <span class=sf-dump-index>6</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3017</a> &#8230;33}
+      <span class=sf-dump-index>7</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3016</a> &#8230;33}
+      <span class=sf-dump-index>8</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3015</a> &#8230;33}
+      <span class=sf-dump-index>9</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3014</a> &#8230;33}
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>10</span>
+  #<span class=sf-dump-protected title=\"Protected property\">currentPage</span>: <span class=sf-dump-num>1</span>
+  #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">query</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fragment</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">pageName</span>: \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  +<span class=sf-dump-public title=\"Public property\">onEachSide</span>: <span class=sf-dump-num>3</span>
+  #<span class=sf-dump-protected title=\"Protected property\">options</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+    \"<span class=sf-dump-key>pageName</span>\" => \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">total</span>: <span class=sf-dump-num>18</span>
+  #<span class=sf-dump-protected title=\"Protected property\">lastPage</span>: <span class=sf-dump-num>2</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-363067597\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","filters":"<pre class=sf-dump id=sf-dump-1937038042 data-indent-pad=\"  \"><span class=sf-dump-note>array:3</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>search</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>account_type</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>status</span>\" => <span class=sf-dump-const>null</span>
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1937038042\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","statusOptions":"<pre class=sf-dump id=sf-dump-959977577 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>active</span>\" => \"<span class=sf-dump-str title=\"6 characters\">Active</span>\"
+  \"<span class=sf-dump-key>inactive</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Inactive</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-959977577\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":"9dce97a3-049d-47a5-8e3f-2083fe10966a","exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php(88): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\storage\\framework\\views\\e5ecdea37a90d3a69d7582aeb14799cf.php(89): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+"} 
+[2025-01-02 12:35:52] local.ERROR: Route [admin.users.notify-bulk] not defined. {"view":{"view":"C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-441731903 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1780</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-441731903\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","users":"<pre class=sf-dump id=sf-dump-1888375367 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Pagination\\LengthAwarePaginator</span> {<a class=sf-dump-ref>#3037</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note title=\"Illuminate\\Database\\Eloquent\\Collection
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Database\\Eloquent</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Collection</span> {<a class=sf-dump-ref>#3046</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3023</a> &#8230;33}
+      <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3022</a> &#8230;33}
+      <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3021</a> &#8230;33}
+      <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3020</a> &#8230;33}
+      <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3019</a> &#8230;33}
+      <span class=sf-dump-index>5</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3018</a> &#8230;33}
+      <span class=sf-dump-index>6</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3017</a> &#8230;33}
+      <span class=sf-dump-index>7</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3016</a> &#8230;33}
+      <span class=sf-dump-index>8</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3015</a> &#8230;33}
+      <span class=sf-dump-index>9</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3014</a> &#8230;33}
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>10</span>
+  #<span class=sf-dump-protected title=\"Protected property\">currentPage</span>: <span class=sf-dump-num>1</span>
+  #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">query</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fragment</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">pageName</span>: \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  +<span class=sf-dump-public title=\"Public property\">onEachSide</span>: <span class=sf-dump-num>3</span>
+  #<span class=sf-dump-protected title=\"Protected property\">options</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+    \"<span class=sf-dump-key>pageName</span>\" => \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">total</span>: <span class=sf-dump-num>18</span>
+  #<span class=sf-dump-protected title=\"Protected property\">lastPage</span>: <span class=sf-dump-num>2</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1888375367\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","filters":"<pre class=sf-dump id=sf-dump-408025973 data-indent-pad=\"  \"><span class=sf-dump-note>array:3</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>search</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>account_type</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>status</span>\" => <span class=sf-dump-const>null</span>
+</samp>]
+</pre><script>Sfdump(\"sf-dump-408025973\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","statusOptions":"<pre class=sf-dump id=sf-dump-693353977 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>active</span>\" => \"<span class=sf-dump-str title=\"6 characters\">Active</span>\"
+  \"<span class=sf-dump-key>inactive</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Inactive</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-693353977\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":"9dce97a3-049d-47a5-8e3f-2083fe10966a","exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php(88): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\storage\\framework\\views\\e5ecdea37a90d3a69d7582aeb14799cf.php(89): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+"} 
+[2025-01-02 12:35:55] local.ERROR: Route [admin.users.notify-bulk] not defined. {"view":{"view":"C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1292686262 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1780</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1292686262\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","users":"<pre class=sf-dump id=sf-dump-2089174261 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Pagination\\LengthAwarePaginator</span> {<a class=sf-dump-ref>#3037</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note title=\"Illuminate\\Database\\Eloquent\\Collection
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Database\\Eloquent</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Collection</span> {<a class=sf-dump-ref>#3046</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:10</span> [<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3023</a> &#8230;33}
+      <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3022</a> &#8230;33}
+      <span class=sf-dump-index>2</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3021</a> &#8230;33}
+      <span class=sf-dump-index>3</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3020</a> &#8230;33}
+      <span class=sf-dump-index>4</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3019</a> &#8230;33}
+      <span class=sf-dump-index>5</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3018</a> &#8230;33}
+      <span class=sf-dump-index>6</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3017</a> &#8230;33}
+      <span class=sf-dump-index>7</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3016</a> &#8230;33}
+      <span class=sf-dump-index>8</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3015</a> &#8230;33}
+      <span class=sf-dump-index>9</span> => <span class=sf-dump-note title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>User</span> {<a class=sf-dump-ref>#3014</a> &#8230;33}
+    </samp>]
+    #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>10</span>
+  #<span class=sf-dump-protected title=\"Protected property\">currentPage</span>: <span class=sf-dump-num>1</span>
+  #<span class=sf-dump-protected title=\"Protected property\">path</span>: \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">query</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fragment</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">pageName</span>: \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  +<span class=sf-dump-public title=\"Public property\">onEachSide</span>: <span class=sf-dump-num>3</span>
+  #<span class=sf-dump-protected title=\"Protected property\">options</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>path</span>\" => \"<span class=sf-dump-str title=\"38 characters\">http://192.168.96.190:8000/admin/users</span>\"
+    \"<span class=sf-dump-key>pageName</span>\" => \"<span class=sf-dump-str title=\"4 characters\">page</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">total</span>: <span class=sf-dump-num>18</span>
+  #<span class=sf-dump-protected title=\"Protected property\">lastPage</span>: <span class=sf-dump-num>2</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-2089174261\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","filters":"<pre class=sf-dump id=sf-dump-1788922521 data-indent-pad=\"  \"><span class=sf-dump-note>array:3</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>search</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>account_type</span>\" => <span class=sf-dump-const>null</span>
+  \"<span class=sf-dump-key>status</span>\" => <span class=sf-dump-const>null</span>
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1788922521\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","statusOptions":"<pre class=sf-dump id=sf-dump-1610399256 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>active</span>\" => \"<span class=sf-dump-str title=\"6 characters\">Active</span>\"
+  \"<span class=sf-dump-key>inactive</span>\" => \"<span class=sf-dump-str title=\"8 characters\">Inactive</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1610399256\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":"9dce97a3-049d-47a5-8e3f-2083fe10966a","exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\resources\\views\\admin\\users\\index.blade.php(88): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+
+[previous exception] [object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [admin.users.notify-bulk] not defined. at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('admin.users.not...', Array, true)
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\storage\\framework\\views\\e5ecdea37a90d3a69d7582aeb14799cf.php(89): route('admin.users.not...')
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\Users\\\\user\\\\D...')
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\user\\\\D...', Array)
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\user\\\\D...', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\user\\\\D...', Array)
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#55 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#57 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#58 {main}
+"} 
+[2025-01-02 12:42:26] local.INFO: FCM notification sent successfully {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","response":{"name":"projects/tekiplanet-app/messages/0:1735821747507626%20eb1e6a20eb1e6a"}} 
+[2025-01-02 12:42:27] local.ERROR: FCM notification failed {"error":"
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+","user_id":"e3c4811a-7752-4e05-a648-d83a19976c06"} 
+[2025-01-02 12:42:27] local.ERROR: 
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+ {"userId":"9dce97a3-049d-47a5-8e3f-2083fe10966a","exception":"[object] (Kreait\\Firebase\\Exception\\Messaging\\NotFound(code: 0): 
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+ at C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\kreait\\firebase-php\\src\\Firebase\\Exception\\Messaging\\NotFound.php:40)
+[stacktrace]
+#0 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\kreait\\firebase-php\\src\\Firebase\\Messaging.php(61): Kreait\\Firebase\\Exception\\Messaging\\NotFound::becauseTokenNotFound('dTWQSudIQ9WBTqX...')
+#1 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Services\\NotificationService.php(70): Kreait\\Firebase\\Messaging->send(Object(Kreait\\Firebase\\Messaging\\CloudMessage))
+#2 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Services\\NotificationService.php(43): App\\Services\\NotificationService->sendFcmNotification(Array, Object(App\\Models\\User))
+#3 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Controllers\\Admin\\UserController.php(333): App\\Services\\NotificationService->send(Array, Array)
+#4 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Admin\\UserController->notifyBulk(Object(Illuminate\\Http\\Request))
+#5 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('notifyBulk', Array)
+#6 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\UserController), 'notifyBulk')
+#7 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#9 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\app\\Http\\Middleware\\AdminRolesMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AdminRolesMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'super_admin', 'admin', 'finance')
+#12 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'admin')
+#16 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#22 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#31 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\user\\Documents\\WEB PROJECTS\\TEKIPLANET\\CONVERTING\\tph-converting\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\user\\\\D...')
+#53 {main}
+"} 
+[2025-01-02 12:43:40] local.ERROR: Bulk notification failed: The selected users field must be a string.  
+[2025-01-02 12:45:31] local.INFO: FCM notification sent successfully {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","response":{"name":"projects/tekiplanet-app/messages/0:1735821931665583%20eb1e6a20eb1e6a"}} 
+[2025-01-02 12:45:31] local.ERROR: FCM notification failed {"error":"
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+","user_id":"e3c4811a-7752-4e05-a648-d83a19976c06"} 
+[2025-01-02 12:45:31] local.ERROR: Bulk notification failed: 
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+  
+[2025-01-02 12:48:44] local.INFO: Login successful {"ip":"192.168.96.190","login_field":"victormonday","user_id":"e3c4811a-7752-4e05-a648-d83a19976c06","request_data":{"login":"victormonday","password":"Victor123456#"},"headers":{"host":["192.168.96.190:8000"],"connection":["keep-alive"],"content-length":["51"],"user-agent":["Mozilla/5.0 (Linux; Android 12; PAHM00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.35 Mobile Safari/537.36"],"accept":["application/json"],"content-type":["application/json"],"origin":["http://192.168.96.190:8080"],"referer":["http://192.168.96.190:8080/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"],"cookie":["XSRF-TOKEN=eyJpdiI6IlBjSjJXU1hRekhzVnk4Nk9IS0RkTWc9PSIsInZhbHVlIjoiY21hKzZ6WHFnUjBSNCtOeFU4Uy9BeU13VVVqMWJyalh3QXRzWlJ0OFoyZ3Z4RFJnVFB2V3E0Y0h1T1ZxYmxUcE9UdHlEWkFGUnJ0aXFKclhaa1dReG0rV0xKcFZKenE2YmJUdjRJWTNYY3dPSEl0UENGeUFyNWc5TFJFUDgzU0ciLCJtYWMiOiIzYzg4ZjlhODljMjkzMDhlZmQ2ZDNjNTg2ZjczNzRkYzI4YjNkZTVhZjk1NWZkOTgzMDY5OTFiMDBjYzJiMzdiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImVNdVFuTjRCNFEzN3hMYXU1RThpekE9PSIsInZhbHVlIjoiQnFZcHhwT2tPaUt2OGpGVFNIUU5kRGt2K1l0bWdaNmI0bVFBalRudHJ5MXVmclhtay95UnN6WGxyeUErdWNaaEo5VWRxWkM1YkhIQ2QrQ2pCZUM5UGpNbFozRlJDTjhkZjN5aXRJVm8zTHhTcmMzSmFTZUo4NExDWGFEWDdtdm4iLCJtYWMiOiI5YzgxNmRhOWNmM2RiZGVhZmY4NjUxNDA1YjEwOWZiZDBjOWMxNjEwOGZhMTUxYjA4MDA4NDY4MmI1Njk2MDRjIiwidGFnIjoiIn0%3D"],"sec-ch-ua-mobile":["?1"],"sec-fetch-dest":["document"],"sec-ch-ua-platform":["Android"],"cache-control":["no-cache"],"pragma":["no-cache"]}} 
+[2025-01-02 12:49:42] local.INFO: FCM notification sent successfully {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","response":{"name":"projects/tekiplanet-app/messages/0:1735822182819316%20eb1e6a20eb1e6a"}} 
+[2025-01-02 12:49:43] local.ERROR: FCM notification failed {"error":"
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+","user_id":"e3c4811a-7752-4e05-a648-d83a19976c06"} 
+[2025-01-02 12:49:43] local.ERROR: Bulk notification failed: 
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+  
+[2025-01-02 12:51:51] local.INFO: FCM notification sent successfully {"user_id":"3e2a1694-4958-4ff0-9d2d-a03031597266","response":{"name":"projects/tekiplanet-app/messages/0:1735822312592158%20eb1e6a20eb1e6a"}} 
+[2025-01-02 12:51:52] local.ERROR: FCM notification failed {"error":"
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+","user_id":"e3c4811a-7752-4e05-a648-d83a19976c06"} 
+[2025-01-02 12:51:52] local.ERROR: Notification failed for user e3c4811a-7752-4e05-a648-d83a19976c06: 
+
+The message could not be delivered to the device identified by 'dTWQSudIQ9WBTqX2TEw8JH:APA91bEPDXz7czBMpEOTUMESvJxb7sQdoWA_asNbXZ3e7Xi9R-keYYCABUoe0-sgAReBgnskecodrfpuvLWZAZGoiw0QhzyyPjBHMGTZkYyZATIfUMTDthk'.
+
+Although the token is syntactically correct, it is not known to the Firebase
+project you are using. This could have the following reasons:
+
+- The token has been unregistered from the project. This can happen when a user
+  has logged out from the application on the given client, or if they have
+  uninstalled or re-installed the application.
+
+- The token has been registered to a different Firebase project than the project
+  you are using to send the message. A common reason for this is when you work
+  with different application environments and are sending a message from one
+  environment to a device in another environment.
+
+  

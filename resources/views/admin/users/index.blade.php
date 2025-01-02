@@ -81,98 +81,180 @@
         </div>
     </div>
 
+    <!-- Notification Modal -->
+    <div id="notificationModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+            
+            <div class="relative bg-white dark:bg-gray-800 rounded-lg max-w-md w-full p-6">
+                <div class="mb-4">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">Send Notification</h3>
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                        Send notification to selected users
+                    </p>
+                </div>
+                
+                <form id="notificationForm" class="space-y-4">
+                    <div>
+                        <label for="title" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Title</label>
+                        <input type="text" name="title" id="title" required
+                            class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea name="message" id="message" rows="3" required
+                            class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"></textarea>
+                    </div>
+                    
+                    <div class="mt-5 sm:mt-6 space-x-2 flex justify-end">
+                        <button type="button" id="cancelBtn"
+                            class="inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Cancel
+                        </button>
+                        <button type="submit"
+                            id="sendBtn"
+                            class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-primary border border-transparent rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            <span class="inline-flex items-center">
+                                <svg id="loadingIcon" class="hidden w-4 h-4 mr-2 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <span id="sendBtnText">Send</span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Users List -->
     <div class="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
         <!-- Desktop Table (hidden on mobile) -->
         <div class="hidden md:block overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead class="bg-gray-50 dark:bg-gray-900">
-                    <tr>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                            User
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                            Account Type
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                            Status
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                            Joined
-                        </th>
-                        <th scope="col" class="relative px-6 py-3">
-                            <span class="sr-only">Actions</span>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                    @forelse($users as $user)
+            <form action="{{ route('admin.users.notify-bulk') }}" method="POST" id="bulkForm">
+                @csrf
+                <div class="p-4 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+                    <div class="flex items-center gap-4">
+                        <select name="action" class="rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-900 text-sm">
+                            <option value="">Bulk Actions</option>
+                            <option value="notify">Send Notification</option>
+                        </select>
+                        <button type="submit" 
+                                class="px-3 py-1 bg-primary text-white text-sm font-medium rounded hover:bg-primary-dark disabled:opacity-50"
+                                id="applyBtn" 
+                                disabled
+                        >
+                            Apply
+                        </button>
+                        <div class="ml-auto">
+                            <label class="text-sm text-gray-600 dark:text-gray-400">
+                                <input type="checkbox" id="selectAll" class="rounded border-gray-300 dark:border-gray-700">
+                                Select All
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                    <thead class="bg-gray-50 dark:bg-gray-900">
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0 h-10 w-10">
-                                        @if($user->avatar)
-                                            <img class="h-10 w-10 rounded-full" src="{{ $user->avatar }}" alt="">
-                                        @else
-                                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-500">
-                                                <span class="text-sm font-medium leading-none text-white">
-                                                    {{ strtoupper(substr($user->first_name, 0, 1)) }}
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400">
+                                <span class="sr-only">Select</span>
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                                User
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                                Account Type
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                                Status
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                                Joined
+                            </th>
+                            <th scope="col" class="relative px-6 py-3">
+                                <span class="sr-only">Actions</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                        @forelse($users as $user)
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <input type="checkbox" 
+                                           name="selected_users[]" 
+                                           value="{{ $user->id }}" 
+                                           class="user-checkbox rounded border-gray-300 dark:border-gray-700">
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 h-10 w-10">
+                                            @if($user->avatar)
+                                                <img class="h-10 w-10 rounded-full" src="{{ $user->avatar }}" alt="">
+                                            @else
+                                                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-500">
+                                                    <span class="text-sm font-medium leading-none text-white">
+                                                        {{ strtoupper(substr($user->first_name, 0, 1)) }}
+                                                    </span>
                                                 </span>
-                                            </span>
-                                        @endif
-                                    </div>
-                                    <div class="ml-4">
-                                        <div class="text-sm font-medium text-gray-900 dark:text-white">
-                                            {{ $user->first_name }} {{ $user->last_name }}
+                                            @endif
                                         </div>
-                                        <div class="text-sm text-gray-500 dark:text-gray-400">
-                                            {{ $user->email }}
+                                        <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-900 dark:text-white">
+                                                {{ $user->first_name }} {{ $user->last_name }}
+                                            </div>
+                                            <div class="text-sm text-gray-500 dark:text-gray-400">
+                                                {{ $user->email }}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ 
-                                    $user->businessProfile ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' : 
-                                    ($user->professional ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200' : 
-                                    'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200') 
-                                }}">
-                                    {{ $user->businessProfile ? 'Business' : ($user->professional ? 'Professional' : 'Student') }}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ 
-                                    $user->status === 'active' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : 
-                                    'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
-                                }}">
-                                    {{ ucfirst($user->status) }}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                                {{ $user->created_at->format('M d, Y') }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a 
-                                    href="{{ route('admin.users.show', $user) }}" 
-                                    class="text-primary hover:text-primary-dark inline-flex items-center"
-                                >
-                                    <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>
-                                    View
-                                </a>
-                            </td>
-                        </tr>
-                    @empty
-                        <tr>
-                            <td colspan="5" class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">
-                                No users found.
-                            </td>
-                        </tr>
-                    @endforelse
-                </tbody>
-            </table>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ 
+                                        $user->businessProfile ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' : 
+                                        ($user->professional ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200' : 
+                                        'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200') 
+                                    }}">
+                                        {{ $user->businessProfile ? 'Business' : ($user->professional ? 'Professional' : 'Student') }}
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ 
+                                        $user->status === 'active' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : 
+                                        'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                                    }}">
+                                        {{ ucfirst($user->status) }}
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                                    {{ $user->created_at->format('M d, Y') }}
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                    <a 
+                                        href="{{ route('admin.users.show', $user) }}" 
+                                        class="text-primary hover:text-primary-dark inline-flex items-center"
+                                    >
+                                        <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                        </svg>
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="5" class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 text-center">
+                                    No users found.
+                                </td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </form>
         </div>
 
         <!-- Mobile Card View -->
@@ -257,3 +339,169 @@
     </div>
 </div>
 @endsection 
+
+
+@push('scripts')
+<!-- Add SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectAll = document.getElementById('selectAll');
+        const userCheckboxes = document.querySelectorAll('.user-checkbox');
+        const bulkForm = document.getElementById('bulkForm');
+        const applyBtn = document.getElementById('applyBtn');
+        const notificationForm = document.getElementById('notificationForm');
+        const notificationModal = document.getElementById('notificationModal');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const sendBtn = document.getElementById('sendBtn');
+        const loadingIcon = document.getElementById('loadingIcon');
+        const sendBtnText = document.getElementById('sendBtnText');
+
+        // Modal functions
+        function openModal() {
+            notificationModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            notificationModal.classList.add('hidden');
+            document.body.style.overflow = '';
+            notificationForm.reset();
+            // Reset button state
+            loadingIcon.classList.add('hidden');
+            sendBtnText.textContent = 'Send';
+            sendBtn.disabled = false;
+        }
+
+        // Show error message
+        function showError(message) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: message,
+                confirmButtonColor: '#3085d6'
+            });
+        }
+
+        // Show success message
+        function showSuccess(data) {
+            let message = data.message;
+            let details = '';
+            
+            if (data.details) {
+                details = `<div class="mt-2 text-sm">
+                    <p>Successfully sent: ${data.details.success_count}</p>
+                    ${data.details.failed_count > 0 ? `<p>Failed: ${data.details.failed_count}</p>` : ''}
+                </div>`;
+            }
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                html: message + details,
+                confirmButtonColor: '#3085d6'
+            });
+        }
+
+        // Close modal when clicking outside
+        notificationModal.addEventListener('click', function(e) {
+            if (e.target === notificationModal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with cancel button
+        cancelBtn.addEventListener('click', closeModal);
+
+        // Handle select all
+        selectAll?.addEventListener('change', function() {
+            userCheckboxes.forEach(checkbox => {
+                checkbox.checked = selectAll.checked;
+            });
+            updateApplyButton();
+        });
+
+        // Handle individual checkbox changes
+        userCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateApplyButton);
+        });
+
+        // Update apply button state
+        function updateApplyButton() {
+            const checkedCount = document.querySelectorAll('.user-checkbox:checked').length;
+            applyBtn.disabled = checkedCount === 0;
+        }
+
+        // Handle bulk form submission
+        bulkForm?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const action = bulkForm.querySelector('[name="action"]').value;
+            if (action === 'notify') {
+                openModal();
+            }
+        });
+
+        // Handle notification form submission
+        notificationForm?.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Confirm before sending
+            const result = await Swal.fire({
+                title: 'Send Notifications?',
+                text: 'Are you sure you want to send these notifications?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, send them!'
+            });
+
+            if (!result.isConfirmed) {
+                return;
+            }
+            
+            // Show loading state
+            loadingIcon.classList.remove('hidden');
+            sendBtnText.textContent = 'Sending...';
+            sendBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData();
+            const selectedUsers = Array.from(document.querySelectorAll('.user-checkbox:checked')).map(cb => cb.value);
+            
+            try {
+                const response = await fetch("{{ route('admin.users.notify-bulk') }}", {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        title: notificationForm.querySelector('#title').value,
+                        message: notificationForm.querySelector('#message').value,
+                        selected_users: JSON.stringify(selectedUsers)
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.message || 'Something went wrong');
+                }
+
+                showSuccess(data);
+                closeModal();
+
+            } catch (error) {
+                showError(error.message);
+                // Reset button state but keep modal open
+                loadingIcon.classList.add('hidden');
+                sendBtnText.textContent = 'Send';
+                sendBtn.disabled = false;
+            }
+        });
+    });
+</script>
+@endpush

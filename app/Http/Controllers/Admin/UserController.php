@@ -316,4 +316,68 @@ class UserController extends Controller
             ], 422);
         }
     }
+
+    public function notifyBulk(Request $request)
+    {
+        try {
+            $validated = $request->validate([
+                'selected_users' => 'required|string',
+                'title' => 'required|string',
+                'message' => 'required|string'
+            ]);
+
+            $userIds = json_decode($validated['selected_users'], true);
+            $users = User::whereIn('id', $userIds)->get();
+            
+            $successCount = 0;
+            $failedCount = 0;
+            $errors = [];
+
+            foreach ($users as $user) {
+                try {
+                    $this->notificationService->send([
+                        'type' => 'admin_notification',
+                        'title' => $validated['title'],
+                        'message' => $validated['message'],
+                        'icon' => 'bell',
+                        'action_url' => null
+                    ], $user);
+                    
+                    $successCount++;
+                } catch (\Exception $e) {
+                    $failedCount++;
+                    // Only log detailed error for debugging
+                    \Log::error('Notification failed for user ' . $user->id . ': ' . $e->getMessage());
+                    
+                    // Check if it's a Firebase token error
+                    if (str_contains($e->getMessage(), 'device identified by')) {
+                        // Remove invalid token
+                        $user->deviceTokens()->delete();
+                    }
+                }
+            }
+
+            $message = "Notifications sent successfully to {$successCount} users.";
+            if ($failedCount > 0) {
+                $message .= " Failed to send to {$failedCount} users (invalid device tokens have been removed).";
+            }
+
+            return response()->json([
+                'success' => true,
+                'message' => $message,
+                'details' => [
+                    'success_count' => $successCount,
+                    'failed_count' => $failedCount
+                ]
+            ]);
+
+        } catch (\Exception $e) {
+            \Log::error('Bulk notification failed: ' . $e->getMessage());
+            
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to process notifications. Please try again.'
+            ], 422);
+        }
+    }
 } 
